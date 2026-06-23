@@ -1,0 +1,674 @@
+{
+  "version": 1,
+  "saved_at": "2026-06-23T23:37:10.030130",
+  "records": {
+    "84b337a1-67b7-4392-a175-086ff1e94f50": {
+      "id": "84b337a1-67b7-4392-a175-086ff1e94f50",
+      "label": "person",
+      "location": {
+        "x": 0.5478,
+        "y": 0.7613,
+        "zone": "floor"
+      },
+      "confidence": 0.862,
+      "first_seen": "2026-06-23T18:04:03.766863",
+      "last_seen": "2026-06-23T18:04:19.101663",
+      "observation_count": 72,
+      "is_stale": false,
+      "bbox": [
+        0.29277772903442384,
+        0.523105239868164,
+        0.8027708053588867,
+        0.9995829264322916
+      ],
+      "history": [
+        {
+          "timestamp": "2026-06-23T18:04:08.395796",
+          "location": {
+            "x": 0.5883,
+            "y": 0.7733,
+            "zone": "floor"
+          },
+          "confidence": 0.838
+        },
+        {
+          "timestamp": "2026-06-23T18:04:08.601979",
+          "location": {
+            "x": 0.588,
+            "y": 0.7734,
+            "zone": "floor"
+          },
+          "confidence": 0.839
+        },
+        {
+          "timestamp": "2026-06-23T18:04:08.801105",
+          "location": {
+            "x": 0.5878,
+            "y": 0.7733,
+            "zone": "floor"
+          },
+          "confidence": 0.847
+        },
+        {
+          "timestamp": "2026-06-23T18:04:09.008494",
+          "location": {
+            "x": 0.5886,
+            "y": 0.7733,
+            "zone": "floor"
+          },
+          "confidence": 0.851
+        },
+        {
+          "timestamp": "2026-06-23T18:04:09.259740",
+          "location": {
+            "x": 0.5899,
+            "y": 0.7743,
+            "zone": "floor"
+          },
+          "confidence": 0.832
+        },
+        {
+          "timestamp": "2026-06-23T18:04:09.467629",
+          "location": {
+            "x": 0.588,
+            "y": 0.7721,
+            "zone": "floor"
+          },
+          "confidence": 0.826
+        },
+        {
+          "timestamp": "2026-06-23T18:04:09.665956",
+          "location": {
+            "x": 0.5881,
+            "y": 0.7724,
+            "zone": "floor"
+          },
+          "confidence": 0.843
+        },
+        {
+          "timestamp": "2026-06-23T18:04:09.866654",
+          "location": {
+            "x": 0.5884,
+            "y": 0.7719,
+            "zone": "floor"
+          },
+          "confidence": 0.84
+        },
+        {
+          "timestamp": "2026-06-23T18:04:10.122071",
+          "location": {
+            "x": 0.5883,
+            "y": 0.7728,
+            "zone": "floor"
+          },
+          "confidence": 0.841
+        },
+        {
+          "timestamp": "2026-06-23T18:04:10.329649",
+          "location": {
+            "x": 0.5878,
+            "y": 0.7726,
+            "zone": "floor"
+          },
+          "confidence": 0.832
+        },
+        {
+          "timestamp": "2026-06-23T18:04:10.523127",
+          "location": {
+            "x": 0.5885,
+            "y": 0.7718,
+            "zone": "floor"
+          },
+          "confidence": 0.848
+        },
+        {
+          "timestamp": "2026-06-23T18:04:10.731571",
+          "location": {
+            "x": 0.5897,
+            "y": 0.7726,
+            "zone": "floor"
+          },
+          "confidence": 0.853
+        },
+        {
+          "timestamp": "2026-06-23T18:04:10.929790",
+          "location": {
+            "x": 0.5887,
+            "y": 0.772,
+            "zone": "floor"
+          },
+          "confidence": 0.835
+        },
+        {
+          "timestamp": "2026-06-23T18:04:11.130781",
+          "location": {
+            "x": 0.6351,
+            "y": 0.7744,
+            "zone": "floor"
+          },
+          "confidence": 0.812
+        },
+        {
+          "timestamp": "2026-06-23T18:04:11.387012",
+          "location": {
+            "x": 0.613,
+            "y": 0.7729,
+            "zone": "floor"
+          },
+          "confidence": 0.817
+        },
+        {
+          "timestamp": "2026-06-23T18:04:11.595415",
+          "location": {
+            "x": 0.6067,
+            "y": 0.7732,
+            "zone": "floor"
+          },
+          "confidence": 0.831
+        },
+        {
+          "timestamp": "2026-06-23T18:04:11.787165",
+          "location": {
+            "x": 0.6048,
+            "y": 0.7737,
+            "zone": "floor"
+          },
+          "confidence": 0.834
+        },
+        {
+          "timestamp": "2026-06-23T18:04:11.994875",
+          "location": {
+            "x": 0.5963,
+            "y": 0.7709,
+            "zone": "floor"
+          },
+          "confidence": 0.803
+        },
+        {
+          "timestamp": "2026-06-23T18:04:12.198425",
+          "location": {
+            "x": 0.6028,
+            "y": 0.7702,
+            "zone": "floor"
+          },
+          "confidence": 0.819
+        },
+        {
+          "timestamp": "2026-06-23T18:04:12.395516",
+          "location": {
+            "x": 0.5994,
+            "y": 0.7682,
+            "zone": "floor"
+          },
+          "confidence": 0.741
+        },
+        {
+          "timestamp": "2026-06-23T18:04:12.650238",
+          "location": {
+            "x": 0.5783,
+            "y": 0.7651,
+            "zone": "floor"
+          },
+          "confidence": 0.828
+        },
+        {
+          "timestamp": "2026-06-23T18:04:12.858330",
+          "location": {
+            "x": 0.5698,
+            "y": 0.7622,
+            "zone": "floor"
+          },
+          "confidence": 0.848
+        },
+        {
+          "timestamp": "2026-06-23T18:04:13.058404",
+          "location": {
+            "x": 0.5764,
+            "y": 0.7624,
+            "zone": "floor"
+          },
+          "confidence": 0.798
+        },
+        {
+          "timestamp": "2026-06-23T18:04:13.259735",
+          "location": {
+            "x": 0.5855,
+            "y": 0.759,
+            "zone": "floor"
+          },
+          "confidence": 0.784
+        },
+        {
+          "timestamp": "2026-06-23T18:04:13.461156",
+          "location": {
+            "x": 0.5797,
+            "y": 0.7585,
+            "zone": "floor"
+          },
+          "confidence": 0.798
+        },
+        {
+          "timestamp": "2026-06-23T18:04:13.668823",
+          "location": {
+            "x": 0.5644,
+            "y": 0.7573,
+            "zone": "floor"
+          },
+          "confidence": 0.848
+        },
+        {
+          "timestamp": "2026-06-23T18:04:13.915283",
+          "location": {
+            "x": 0.5363,
+            "y": 0.7443,
+            "zone": "floor"
+          },
+          "confidence": 0.892
+        },
+        {
+          "timestamp": "2026-06-23T18:04:14.125707",
+          "location": {
+            "x": 0.514,
+            "y": 0.7378,
+            "zone": "floor"
+          },
+          "confidence": 0.855
+        },
+        {
+          "timestamp": "2026-06-23T18:04:14.317859",
+          "location": {
+            "x": 0.5158,
+            "y": 0.7345,
+            "zone": "floor"
+          },
+          "confidence": 0.888
+        },
+        {
+          "timestamp": "2026-06-23T18:04:14.522938",
+          "location": {
+            "x": 0.5168,
+            "y": 0.7328,
+            "zone": "floor"
+          },
+          "confidence": 0.876
+        },
+        {
+          "timestamp": "2026-06-23T18:04:14.724908",
+          "location": {
+            "x": 0.4607,
+            "y": 0.7333,
+            "zone": "floor"
+          },
+          "confidence": 0.842
+        },
+        {
+          "timestamp": "2026-06-23T18:04:14.989170",
+          "location": {
+            "x": 0.4639,
+            "y": 0.7302,
+            "zone": "floor"
+          },
+          "confidence": 0.902
+        },
+        {
+          "timestamp": "2026-06-23T18:04:15.244816",
+          "location": {
+            "x": 0.4695,
+            "y": 0.7315,
+            "zone": "floor"
+          },
+          "confidence": 0.872
+        },
+        {
+          "timestamp": "2026-06-23T18:04:15.452294",
+          "location": {
+            "x": 0.4742,
+            "y": 0.7318,
+            "zone": "floor"
+          },
+          "confidence": 0.873
+        },
+        {
+          "timestamp": "2026-06-23T18:04:15.650209",
+          "location": {
+            "x": 0.5185,
+            "y": 0.7339,
+            "zone": "floor"
+          },
+          "confidence": 0.886
+        },
+        {
+          "timestamp": "2026-06-23T18:04:15.852491",
+          "location": {
+            "x": 0.5194,
+            "y": 0.7343,
+            "zone": "floor"
+          },
+          "confidence": 0.896
+        },
+        {
+          "timestamp": "2026-06-23T18:04:16.052131",
+          "location": {
+            "x": 0.5229,
+            "y": 0.7373,
+            "zone": "floor"
+          },
+          "confidence": 0.882
+        },
+        {
+          "timestamp": "2026-06-23T18:04:16.258253",
+          "location": {
+            "x": 0.5684,
+            "y": 0.7419,
+            "zone": "floor"
+          },
+          "confidence": 0.865
+        },
+        {
+          "timestamp": "2026-06-23T18:04:16.509730",
+          "location": {
+            "x": 0.553,
+            "y": 0.7599,
+            "zone": "floor"
+          },
+          "confidence": 0.843
+        },
+        {
+          "timestamp": "2026-06-23T18:04:16.714880",
+          "location": {
+            "x": 0.5562,
+            "y": 0.7644,
+            "zone": "floor"
+          },
+          "confidence": 0.862
+        },
+        {
+          "timestamp": "2026-06-23T18:04:16.971840",
+          "location": {
+            "x": 0.5549,
+            "y": 0.7678,
+            "zone": "floor"
+          },
+          "confidence": 0.853
+        },
+        {
+          "timestamp": "2026-06-23T18:04:17.178426",
+          "location": {
+            "x": 0.5516,
+            "y": 0.769,
+            "zone": "floor"
+          },
+          "confidence": 0.863
+        },
+        {
+          "timestamp": "2026-06-23T18:04:17.432847",
+          "location": {
+            "x": 0.5509,
+            "y": 0.7678,
+            "zone": "floor"
+          },
+          "confidence": 0.853
+        },
+        {
+          "timestamp": "2026-06-23T18:04:17.642848",
+          "location": {
+            "x": 0.5528,
+            "y": 0.7684,
+            "zone": "floor"
+          },
+          "confidence": 0.863
+        },
+        {
+          "timestamp": "2026-06-23T18:04:17.838240",
+          "location": {
+            "x": 0.5502,
+            "y": 0.7673,
+            "zone": "floor"
+          },
+          "confidence": 0.86
+        },
+        {
+          "timestamp": "2026-06-23T18:04:18.045218",
+          "location": {
+            "x": 0.5505,
+            "y": 0.7702,
+            "zone": "floor"
+          },
+          "confidence": 0.869
+        },
+        {
+          "timestamp": "2026-06-23T18:04:18.243851",
+          "location": {
+            "x": 0.5523,
+            "y": 0.7667,
+            "zone": "floor"
+          },
+          "confidence": 0.859
+        },
+        {
+          "timestamp": "2026-06-23T18:04:18.443571",
+          "location": {
+            "x": 0.5508,
+            "y": 0.7623,
+            "zone": "floor"
+          },
+          "confidence": 0.873
+        },
+        {
+          "timestamp": "2026-06-23T18:04:18.698202",
+          "location": {
+            "x": 0.5503,
+            "y": 0.7616,
+            "zone": "floor"
+          },
+          "confidence": 0.864
+        },
+        {
+          "timestamp": "2026-06-23T18:04:18.909633",
+          "location": {
+            "x": 0.5477,
+            "y": 0.7604,
+            "zone": "floor"
+          },
+          "confidence": 0.871
+        }
+      ]
+    },
+    "b1aaceea-039a-41ac-9a7e-dc106909b71d": {
+      "id": "b1aaceea-039a-41ac-9a7e-dc106909b71d",
+      "label": "suitcase",
+      "location": {
+        "x": 0.4001,
+        "y": 0.7306,
+        "zone": "floor"
+      },
+      "confidence": 0.564,
+      "first_seen": "2026-06-23T18:04:12.395516",
+      "last_seen": "2026-06-23T18:04:12.395516",
+      "observation_count": 1,
+      "is_stale": false,
+      "bbox": [
+        0.22158517837524414,
+        0.4627211252848307,
+        0.5786076545715332,
+        0.998379898071289
+      ],
+      "history": []
+    },
+    "8919f2a6-ea9c-4969-92c7-d77666f81201": {
+      "id": "8919f2a6-ea9c-4969-92c7-d77666f81201",
+      "label": "chair",
+      "location": {
+        "x": 0.3876,
+        "y": 0.7319,
+        "zone": "floor"
+      },
+      "confidence": 0.773,
+      "first_seen": "2026-06-23T18:04:12.650238",
+      "last_seen": "2026-06-23T18:04:19.101663",
+      "observation_count": 18,
+      "is_stale": false,
+      "bbox": [
+        0.21753864288330077,
+        0.4638131459554036,
+        0.5575667381286621,
+        1.0
+      ],
+      "history": [
+        {
+          "timestamp": "2026-06-23T18:04:12.650238",
+          "location": {
+            "x": 0.3947,
+            "y": 0.7318,
+            "zone": "floor"
+          },
+          "confidence": 0.651
+        },
+        {
+          "timestamp": "2026-06-23T18:04:12.858330",
+          "location": {
+            "x": 0.3933,
+            "y": 0.7316,
+            "zone": "floor"
+          },
+          "confidence": 0.701
+        },
+        {
+          "timestamp": "2026-06-23T18:04:13.668823",
+          "location": {
+            "x": 0.3929,
+            "y": 0.7315,
+            "zone": "floor"
+          },
+          "confidence": 0.684
+        },
+        {
+          "timestamp": "2026-06-23T18:04:14.317859",
+          "location": {
+            "x": 0.4662,
+            "y": 0.7143,
+            "zone": "floor"
+          },
+          "confidence": 0.553
+        },
+        {
+          "timestamp": "2026-06-23T18:04:16.258253",
+          "location": {
+            "x": 0.3795,
+            "y": 0.7322,
+            "zone": "floor"
+          },
+          "confidence": 0.67
+        },
+        {
+          "timestamp": "2026-06-23T18:04:16.509730",
+          "location": {
+            "x": 0.3859,
+            "y": 0.7321,
+            "zone": "floor"
+          },
+          "confidence": 0.82
+        },
+        {
+          "timestamp": "2026-06-23T18:04:16.714880",
+          "location": {
+            "x": 0.3898,
+            "y": 0.731,
+            "zone": "floor"
+          },
+          "confidence": 0.779
+        },
+        {
+          "timestamp": "2026-06-23T18:04:16.971840",
+          "location": {
+            "x": 0.39,
+            "y": 0.7309,
+            "zone": "floor"
+          },
+          "confidence": 0.85
+        },
+        {
+          "timestamp": "2026-06-23T18:04:17.178426",
+          "location": {
+            "x": 0.3894,
+            "y": 0.7309,
+            "zone": "floor"
+          },
+          "confidence": 0.846
+        },
+        {
+          "timestamp": "2026-06-23T18:04:17.432847",
+          "location": {
+            "x": 0.3909,
+            "y": 0.731,
+            "zone": "floor"
+          },
+          "confidence": 0.883
+        },
+        {
+          "timestamp": "2026-06-23T18:04:17.642848",
+          "location": {
+            "x": 0.3901,
+            "y": 0.7308,
+            "zone": "floor"
+          },
+          "confidence": 0.805
+        },
+        {
+          "timestamp": "2026-06-23T18:04:17.838240",
+          "location": {
+            "x": 0.3897,
+            "y": 0.7309,
+            "zone": "floor"
+          },
+          "confidence": 0.828
+        },
+        {
+          "timestamp": "2026-06-23T18:04:18.045218",
+          "location": {
+            "x": 0.3901,
+            "y": 0.731,
+            "zone": "floor"
+          },
+          "confidence": 0.858
+        },
+        {
+          "timestamp": "2026-06-23T18:04:18.243851",
+          "location": {
+            "x": 0.3903,
+            "y": 0.7311,
+            "zone": "floor"
+          },
+          "confidence": 0.847
+        },
+        {
+          "timestamp": "2026-06-23T18:04:18.443571",
+          "location": {
+            "x": 0.3889,
+            "y": 0.7312,
+            "zone": "floor"
+          },
+          "confidence": 0.831
+        },
+        {
+          "timestamp": "2026-06-23T18:04:18.698202",
+          "location": {
+            "x": 0.3888,
+            "y": 0.7312,
+            "zone": "floor"
+          },
+          "confidence": 0.796
+        },
+        {
+          "timestamp": "2026-06-23T18:04:18.909633",
+          "location": {
+            "x": 0.3872,
+            "y": 0.7312,
+            "zone": "floor"
+          },
+          "confidence": 0.834
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,302 @@
+2026-06-23 18:02:51.953 | INFO     | vision.detector:__init__:87 - Loading YOLO model: yolov8n.pt
+2026-06-23 18:02:52.287 | INFO     | vision.detector:__init__:89 - YOLO detector ready.
+2026-06-23 18:02:52.288 | INFO     | memory.store:_load_from_disk:247 - No memory file found at C:\Users\monfo\Downloads\MemoryMap\data\memory.json. Starting fresh.
+2026-06-23 18:03:37.485 | INFO     | vision.detector:__init__:87 - Loading YOLO model: yolov8n.pt
+2026-06-23 18:03:37.512 | INFO     | vision.detector:__init__:89 - YOLO detector ready.
+2026-06-23 18:03:37.512 | INFO     | memory.store:_load_from_disk:247 - No memory file found at C:\Users\monfo\Downloads\MemoryMap\data\memory.json. Starting fresh.
+2026-06-23 18:03:37.516 | INFO     | memory.store:start:66 - MemoryStore started (persist every 30s)
+2026-06-23 18:03:37.531 | INFO     | core.engine:start:86 - MemoryMap engine started (source=0, backend=yolo).
+2026-06-23 18:03:38.517 | DEBUG    | memory.store:flush:217 - Memory flushed (0 records).
+2026-06-23 18:03:58.705 | DEBUG    | query.handler:handle:162 - Query intent: FIND_OBJECT  text='source'
+2026-06-23 18:03:58.705 | INFO     | core.engine:ask:136 - Query: 'source' → 'I have no record of a source. It may not have been seen by the camera yet.'
+2026-06-23 18:04:02.041 | INFO     | vision.frame_reader:open:79 - Video source opened: 0 @ 640x480 (target FPS: 5)
+2026-06-23 18:04:03.757 | DEBUG    | core.engine:observe_frame:120 - Frame 1: 0 detection(s).
+2026-06-23 18:04:03.788 | INFO     | memory.store:ingest:114 - New object: ObjectRecord(label='person', zone='floor', confidence=0.83, last_seen=18:04:03)
+2026-06-23 18:04:03.788 | DEBUG    | core.engine:observe_frame:120 - Frame 2: 1 detection(s).
+2026-06-23 18:04:04.019 | DEBUG    | memory.store:ingest:101 - Updated: ObjectRecord(label='person', zone='floor', confidence=0.84, last_seen=18:04:04)
+2026-06-23 18:04:04.019 | DEBUG    | core.engine:observe_frame:120 - Frame 3: 1 detection(s).
+2026-06-23 18:04:04.228 | DEBUG    | memory.store:ingest:101 - Updated: ObjectRecord(label='person', zone='floor', confidence=0.83, last_seen=18:04:04)
+2026-06-23 18:04:04.228 | DEBUG    | core.engine:observe_frame:120 - Frame 4: 1 detection(s).
+2026-06-23 18:04:04.420 | DEBUG    | memory.store:ingest:101 - Updated: ObjectRecord(label='person', zone='floor', confidence=0.83, last_seen=18:04:04)
+2026-06-23 18:04:04.420 | DEBUG    | core.engine:observe_frame:120 - Frame 5: 1 detection(s).
+2026-06-23 18:04:04.626 | DEBUG    | memory.store:ingest:101 - Updated: ObjectRecord(label='person', zone='floor', confidence=0.83, last_seen=18:04:04)
+2026-06-23 18:04:04.626 | DEBUG    | core.engine:observe_frame:120 - Frame 6: 1 detection(s).
+2026-06-23 18:04:04.827 | DEBUG    | memory.store:ingest:101 - Updated: ObjectRecord(label='person', zone='floor', confidence=0.82, last_seen=18:04:04)
+2026-06-23 18:04:04.827 | DEBUG    | core.engine:observe_frame:120 - Frame 7: 1 detection(s).
+2026-06-23 18:04:05.091 | DEBUG    | memory.store:ingest:101 - Updated: ObjectRecord(label='person', zone='floor', confidence=0.84, last_seen=18:04:05)
+2026-06-23 18:04:05.091 | DEBUG    | core.engine:observe_frame:120 - Frame 8: 1 detection(s).
+2026-06-23 18:04:05.347 | DEBUG    | memory.store:ingest:101 - Updated: ObjectRecord(label='person', zone='floor', confidence=0.84, last_seen=18:04:05)
+2026-06-23 18:04:05.347 | DEBUG    | core.engine:observe_frame:120 - Frame 9: 1 detection(s).
+2026-06-23 18:04:05.553 | DEBUG    | memory.store:ingest:101 - Updated: ObjectRecord(label='person', zone='floor', confidence=0.83, last_seen=18:04:05)
+2026-06-23 18:04:05.553 | DEBUG    | core.engine:observe_frame:120 - Frame 10: 1 detection(s).
+2026-06-23 18:04:05.747 | DEBUG    | memory.store:ingest:101 - Updated: ObjectRecord(label='person', zone='floor', confidence=0.83, last_seen=18:04:05)
+2026-06-23 18:04:05.752 | DEBUG    | core.engine:observe_frame:120 - Frame 11: 1 detection(s).
+2026-06-23 18:04:05.954 | DEBUG    | memory.store:ingest:101 - Updated: ObjectRecord(label='person', zone='floor', confidence=0.84, last_seen=18:04:05)
+2026-06-23 18:04:05.954 | DEBUG    | core.engine:observe_frame:120 - Frame 12: 1 detection(s).
+2026-06-23 18:04:06.155 | DEBUG    | memory.store:ingest:101 - Updated: ObjectRecord(label='person', zone='floor', confidence=0.83, last_seen=18:04:06)
+2026-06-23 18:04:06.156 | DEBUG    | core.engine:observe_frame:120 - Frame 13: 1 detection(s).
+2026-06-23 18:04:06.419 | DEBUG    | memory.store:ingest:101 - Updated: ObjectRecord(label='person', zone='floor', confidence=0.83, last_seen=18:04:06)
+2026-06-23 18:04:06.419 | DEBUG    | core.engine:observe_frame:120 - Frame 14: 1 detection(s).
+2026-06-23 18:04:06.675 | DEBUG    | memory.store:ingest:101 - Updated: ObjectRecord(label='person', zone='floor', confidence=0.83, last_seen=18:04:06)
+2026-06-23 18:04:06.675 | DEBUG    | core.engine:observe_frame:120 - Frame 15: 1 detection(s).
+2026-06-23 18:04:06.886 | DEBUG    | memory.store:ingest:101 - Updated: ObjectRecord(label='person', zone='floor', confidence=0.82, last_seen=18:04:06)
+2026-06-23 18:04:06.886 | DEBUG    | core.engine:observe_frame:120 - Frame 16: 1 detection(s).
+2026-06-23 18:04:07.075 | DEBUG    | memory.store:ingest:101 - Updated: ObjectRecord(label='person', zone='floor', confidence=0.83, last_seen=18:04:07)
+2026-06-23 18:04:07.075 | DEBUG    | core.engine:observe_frame:120 - Frame 17: 1 detection(s).
+2026-06-23 18:04:07.282 | DEBUG    | memory.store:ingest:101 - Updated: ObjectRecord(label='person', zone='floor', confidence=0.82, last_seen=18:04:07)
+2026-06-23 18:04:07.282 | DEBUG    | core.engine:observe_frame:120 - Frame 18: 1 detection(s).
+2026-06-23 18:04:07.487 | DEBUG    | memory.store:ingest:101 - Updated: ObjectRecord(label='person', zone='floor', confidence=0.84, last_seen=18:04:07)
+2026-06-23 18:04:07.488 | DEBUG    | core.engine:observe_frame:120 - Frame 19: 1 detection(s).
+2026-06-23 18:04:07.747 | DEBUG    | memory.store:ingest:101 - Updated: ObjectRecord(label='person', zone='floor', confidence=0.84, last_seen=18:04:07)
+2026-06-23 18:04:07.747 | DEBUG    | core.engine:observe_frame:120 - Frame 20: 1 detection(s).
+2026-06-23 18:04:08.002 | DEBUG    | memory.store:ingest:101 - Updated: ObjectRecord(label='person', zone='floor', confidence=0.85, last_seen=18:04:07)
+2026-06-23 18:04:08.002 | DEBUG    | core.engine:observe_frame:120 - Frame 21: 1 detection(s).
+2026-06-23 18:04:08.212 | DEBUG    | memory.store:ingest:101 - Updated: ObjectRecord(label='person', zone='floor', confidence=0.83, last_seen=18:04:08)
+2026-06-23 18:04:08.212 | DEBUG    | core.engine:observe_frame:120 - Frame 22: 1 detection(s).
+2026-06-23 18:04:08.404 | DEBUG    | memory.store:ingest:101 - Updated: ObjectRecord(label='person', zone='floor', confidence=0.84, last_seen=18:04:08)
+2026-06-23 18:04:08.404 | DEBUG    | core.engine:observe_frame:120 - Frame 23: 1 detection(s).
+2026-06-23 18:04:08.528 | DEBUG    | memory.store:flush:217 - Memory flushed (1 records).
+2026-06-23 18:04:08.609 | DEBUG    | memory.store:ingest:101 - Updated: ObjectRecord(label='person', zone='floor', confidence=0.84, last_seen=18:04:08)
+2026-06-23 18:04:08.610 | DEBUG    | core.engine:observe_frame:120 - Frame 24: 1 detection(s).
+2026-06-23 18:04:08.809 | DEBUG    | memory.store:ingest:101 - Updated: ObjectRecord(label='person', zone='floor', confidence=0.85, last_seen=18:04:08)
+2026-06-23 18:04:08.809 | DEBUG    | core.engine:observe_frame:120 - Frame 25: 1 detection(s).
+2026-06-23 18:04:09.016 | DEBUG    | memory.store:ingest:101 - Updated: ObjectRecord(label='person', zone='floor', confidence=0.85, last_seen=18:04:09)
+2026-06-23 18:04:09.017 | DEBUG    | core.engine:observe_frame:120 - Frame 26: 1 detection(s).
+2026-06-23 18:04:09.268 | DEBUG    | memory.store:ingest:101 - Updated: ObjectRecord(label='person', zone='floor', confidence=0.83, last_seen=18:04:09)
+2026-06-23 18:04:09.268 | DEBUG    | core.engine:observe_frame:120 - Frame 27: 1 detection(s).
+2026-06-23 18:04:09.476 | DEBUG    | memory.store:ingest:101 - Updated: ObjectRecord(label='person', zone='floor', confidence=0.83, last_seen=18:04:09)
+2026-06-23 18:04:09.476 | DEBUG    | core.engine:observe_frame:120 - Frame 28: 1 detection(s).
+2026-06-23 18:04:09.678 | DEBUG    | memory.store:ingest:101 - Updated: ObjectRecord(label='person', zone='floor', confidence=0.84, last_seen=18:04:09)
+2026-06-23 18:04:09.678 | DEBUG    | core.engine:observe_frame:120 - Frame 29: 1 detection(s).
+2026-06-23 18:04:09.878 | DEBUG    | memory.store:ingest:101 - Updated: ObjectRecord(label='person', zone='floor', confidence=0.84, last_seen=18:04:09)
+2026-06-23 18:04:09.878 | DEBUG    | core.engine:observe_frame:120 - Frame 30: 1 detection(s).
+2026-06-23 18:04:10.136 | DEBUG    | memory.store:ingest:101 - Updated: ObjectRecord(label='person', zone='floor', confidence=0.84, last_seen=18:04:10)
+2026-06-23 18:04:10.136 | DEBUG    | core.engine:observe_frame:120 - Frame 31: 1 detection(s).
+2026-06-23 18:04:10.342 | DEBUG    | memory.store:ingest:101 - Updated: ObjectRecord(label='person', zone='floor', confidence=0.83, last_seen=18:04:10)
+2026-06-23 18:04:10.342 | DEBUG    | core.engine:observe_frame:120 - Frame 32: 1 detection(s).
+2026-06-23 18:04:10.536 | DEBUG    | memory.store:ingest:101 - Updated: ObjectRecord(label='person', zone='floor', confidence=0.85, last_seen=18:04:10)
+2026-06-23 18:04:10.536 | DEBUG    | core.engine:observe_frame:120 - Frame 33: 1 detection(s).
+2026-06-23 18:04:10.745 | DEBUG    | memory.store:ingest:101 - Updated: ObjectRecord(label='person', zone='floor', confidence=0.85, last_seen=18:04:10)
+2026-06-23 18:04:10.745 | DEBUG    | core.engine:observe_frame:120 - Frame 34: 1 detection(s).
+2026-06-23 18:04:10.943 | DEBUG    | memory.store:ingest:101 - Updated: ObjectRecord(label='person', zone='floor', confidence=0.84, last_seen=18:04:10)
+2026-06-23 18:04:10.943 | DEBUG    | core.engine:observe_frame:120 - Frame 35: 1 detection(s).
+2026-06-23 18:04:11.144 | DEBUG    | memory.store:ingest:101 - Updated: ObjectRecord(label='person', zone='floor', confidence=0.81, last_seen=18:04:11)
+2026-06-23 18:04:11.144 | DEBUG    | core.engine:observe_frame:120 - Frame 36: 1 detection(s).
+2026-06-23 18:04:11.402 | DEBUG    | memory.store:ingest:101 - Updated: ObjectRecord(label='person', zone='floor', confidence=0.82, last_seen=18:04:11)
+2026-06-23 18:04:11.402 | DEBUG    | core.engine:observe_frame:120 - Frame 37: 1 detection(s).
+2026-06-23 18:04:11.619 | DEBUG    | memory.store:ingest:101 - Updated: ObjectRecord(label='person', zone='floor', confidence=0.83, last_seen=18:04:11)
+2026-06-23 18:04:11.619 | DEBUG    | core.engine:observe_frame:120 - Frame 38: 1 detection(s).
+2026-06-23 18:04:11.811 | DEBUG    | memory.store:ingest:101 - Updated: ObjectRecord(label='person', zone='floor', confidence=0.83, last_seen=18:04:11)
+2026-06-23 18:04:11.812 | DEBUG    | core.engine:observe_frame:120 - Frame 39: 1 detection(s).
+2026-06-23 18:04:12.019 | DEBUG    | memory.store:ingest:101 - Updated: ObjectRecord(label='person', zone='floor', confidence=0.80, last_seen=18:04:11)
+2026-06-23 18:04:12.019 | DEBUG    | core.engine:observe_frame:120 - Frame 40: 1 detection(s).
+2026-06-23 18:04:12.223 | DEBUG    | memory.store:ingest:101 - Updated: ObjectRecord(label='person', zone='floor', confidence=0.82, last_seen=18:04:12)
+2026-06-23 18:04:12.223 | DEBUG    | core.engine:observe_frame:120 - Frame 41: 1 detection(s).
+2026-06-23 18:04:12.420 | DEBUG    | memory.store:ingest:101 - Updated: ObjectRecord(label='person', zone='floor', confidence=0.74, last_seen=18:04:12)
+2026-06-23 18:04:12.420 | INFO     | memory.store:ingest:114 - New object: ObjectRecord(label='suitcase', zone='floor', confidence=0.56, last_seen=18:04:12)
+2026-06-23 18:04:12.420 | DEBUG    | core.engine:observe_frame:120 - Frame 42: 2 detection(s).
+2026-06-23 18:04:12.676 | DEBUG    | memory.store:ingest:101 - Updated: ObjectRecord(label='person', zone='floor', confidence=0.83, last_seen=18:04:12)
+2026-06-23 18:04:12.676 | INFO     | memory.store:ingest:114 - New object: ObjectRecord(label='chair', zone='floor', confidence=0.65, last_seen=18:04:12)
+2026-06-23 18:04:12.677 | DEBUG    | core.engine:observe_frame:120 - Frame 43: 2 detection(s).
+2026-06-23 18:04:12.883 | DEBUG    | memory.store:ingest:101 - Updated: ObjectRecord(label='person', zone='floor', confidence=0.85, last_seen=18:04:12)
+2026-06-23 18:04:12.883 | DEBUG    | memory.store:ingest:101 - Updated: ObjectRecord(label='chair', zone='floor', confidence=0.70, last_seen=18:04:12)
+2026-06-23 18:04:12.883 | DEBUG    | core.engine:observe_frame:120 - Frame 44: 2 detection(s).
+2026-06-23 18:04:13.084 | DEBUG    | memory.store:ingest:101 - Updated: ObjectRecord(label='person', zone='floor', confidence=0.80, last_seen=18:04:13)
+2026-06-23 18:04:13.084 | DEBUG    | core.engine:observe_frame:120 - Frame 45: 1 detection(s).
+2026-06-23 18:04:13.284 | DEBUG    | memory.store:ingest:101 - Updated: ObjectRecord(label='person', zone='floor', confidence=0.78, last_seen=18:04:13)
+2026-06-23 18:04:13.284 | DEBUG    | core.engine:observe_frame:120 - Frame 46: 1 detection(s).
+2026-06-23 18:04:13.486 | DEBUG    | memory.store:ingest:101 - Updated: ObjectRecord(label='person', zone='floor', confidence=0.80, last_seen=18:04:13)
+2026-06-23 18:04:13.486 | DEBUG    | core.engine:observe_frame:120 - Frame 47: 1 detection(s).
+2026-06-23 18:04:13.693 | DEBUG    | memory.store:ingest:101 - Updated: ObjectRecord(label='person', zone='floor', confidence=0.85, last_seen=18:04:13)
+2026-06-23 18:04:13.694 | DEBUG    | memory.store:ingest:101 - Updated: ObjectRecord(label='chair', zone='floor', confidence=0.68, last_seen=18:04:13)
+2026-06-23 18:04:13.694 | DEBUG    | core.engine:observe_frame:120 - Frame 48: 2 detection(s).
+2026-06-23 18:04:13.940 | DEBUG    | memory.store:ingest:101 - Updated: ObjectRecord(label='person', zone='floor', confidence=0.89, last_seen=18:04:13)
+2026-06-23 18:04:13.940 | DEBUG    | core.engine:observe_frame:120 - Frame 49: 1 detection(s).
+2026-06-23 18:04:14.150 | DEBUG    | memory.store:ingest:101 - Updated: ObjectRecord(label='person', zone='floor', confidence=0.85, last_seen=18:04:14)
+2026-06-23 18:04:14.150 | DEBUG    | core.engine:observe_frame:120 - Frame 50: 1 detection(s).
+2026-06-23 18:04:14.342 | DEBUG    | memory.store:ingest:101 - Updated: ObjectRecord(label='person', zone='floor', confidence=0.89, last_seen=18:04:14)
+2026-06-23 18:04:14.342 | DEBUG    | memory.store:ingest:101 - Updated: ObjectRecord(label='chair', zone='floor', confidence=0.55, last_seen=18:04:14)
+2026-06-23 18:04:14.342 | DEBUG    | core.engine:observe_frame:120 - Frame 51: 2 detection(s).
+2026-06-23 18:04:14.547 | DEBUG    | memory.store:ingest:101 - Updated: ObjectRecord(label='person', zone='floor', confidence=0.88, last_seen=18:04:14)
+2026-06-23 18:04:14.547 | DEBUG    | core.engine:observe_frame:120 - Frame 52: 1 detection(s).
+2026-06-23 18:04:14.750 | DEBUG    | memory.store:ingest:101 - Updated: ObjectRecord(label='person', zone='floor', confidence=0.84, last_seen=18:04:14)
+2026-06-23 18:04:14.750 | DEBUG    | core.engine:observe_frame:120 - Frame 53: 1 detection(s).
+2026-06-23 18:04:15.013 | DEBUG    | memory.store:ingest:101 - Updated: ObjectRecord(label='person', zone='floor', confidence=0.90, last_seen=18:04:14)
+2026-06-23 18:04:15.013 | DEBUG    | core.engine:observe_frame:120 - Frame 54: 1 detection(s).
+2026-06-23 18:04:15.269 | DEBUG    | memory.store:ingest:101 - Updated: ObjectRecord(label='person', zone='floor', confidence=0.87, last_seen=18:04:15)
+2026-06-23 18:04:15.269 | DEBUG    | core.engine:observe_frame:120 - Frame 55: 1 detection(s).
+2026-06-23 18:04:15.477 | DEBUG    | memory.store:ingest:101 - Updated: ObjectRecord(label='person', zone='floor', confidence=0.87, last_seen=18:04:15)
+2026-06-23 18:04:15.477 | DEBUG    | core.engine:observe_frame:120 - Frame 56: 1 detection(s).
+2026-06-23 18:04:15.675 | DEBUG    | memory.store:ingest:101 - Updated: ObjectRecord(label='person', zone='floor', confidence=0.89, last_seen=18:04:15)
+2026-06-23 18:04:15.675 | DEBUG    | core.engine:observe_frame:120 - Frame 57: 1 detection(s).
+2026-06-23 18:04:15.877 | DEBUG    | memory.store:ingest:101 - Updated: ObjectRecord(label='person', zone='floor', confidence=0.90, last_seen=18:04:15)
+2026-06-23 18:04:15.877 | DEBUG    | core.engine:observe_frame:120 - Frame 58: 1 detection(s).
+2026-06-23 18:04:16.076 | DEBUG    | memory.store:ingest:101 - Updated: ObjectRecord(label='person', zone='floor', confidence=0.88, last_seen=18:04:16)
+2026-06-23 18:04:16.076 | DEBUG    | core.engine:observe_frame:120 - Frame 59: 1 detection(s).
+2026-06-23 18:04:16.284 | DEBUG    | memory.store:ingest:101 - Updated: ObjectRecord(label='person', zone='floor', confidence=0.87, last_seen=18:04:16)
+2026-06-23 18:04:16.284 | DEBUG    | memory.store:ingest:101 - Updated: ObjectRecord(label='chair', zone='floor', confidence=0.67, last_seen=18:04:16)
+2026-06-23 18:04:16.285 | DEBUG    | core.engine:observe_frame:120 - Frame 60: 2 detection(s).
+2026-06-23 18:04:16.534 | DEBUG    | memory.store:ingest:101 - Updated: ObjectRecord(label='person', zone='floor', confidence=0.84, last_seen=18:04:16)
+2026-06-23 18:04:16.534 | DEBUG    | memory.store:ingest:101 - Updated: ObjectRecord(label='chair', zone='floor', confidence=0.82, last_seen=18:04:16)
+2026-06-23 18:04:16.534 | DEBUG    | core.engine:observe_frame:120 - Frame 61: 2 detection(s).
+2026-06-23 18:04:16.739 | DEBUG    | memory.store:ingest:101 - Updated: ObjectRecord(label='person', zone='floor', confidence=0.86, last_seen=18:04:16)
+2026-06-23 18:04:16.739 | DEBUG    | memory.store:ingest:101 - Updated: ObjectRecord(label='chair', zone='floor', confidence=0.78, last_seen=18:04:16)
+2026-06-23 18:04:16.739 | DEBUG    | core.engine:observe_frame:120 - Frame 62: 2 detection(s).
+2026-06-23 18:04:16.996 | DEBUG    | memory.store:ingest:101 - Updated: ObjectRecord(label='person', zone='floor', confidence=0.85, last_seen=18:04:16)
+2026-06-23 18:04:16.996 | DEBUG    | memory.store:ingest:101 - Updated: ObjectRecord(label='chair', zone='floor', confidence=0.85, last_seen=18:04:16)
+2026-06-23 18:04:16.997 | DEBUG    | core.engine:observe_frame:120 - Frame 63: 2 detection(s).
+2026-06-23 18:04:17.203 | DEBUG    | memory.store:ingest:101 - Updated: ObjectRecord(label='person', zone='floor', confidence=0.86, last_seen=18:04:17)
+2026-06-23 18:04:17.203 | DEBUG    | memory.store:ingest:101 - Updated: ObjectRecord(label='chair', zone='floor', confidence=0.85, last_seen=18:04:17)
+2026-06-23 18:04:17.204 | DEBUG    | core.engine:observe_frame:120 - Frame 64: 2 detection(s).
+2026-06-23 18:04:17.457 | DEBUG    | memory.store:ingest:101 - Updated: ObjectRecord(label='chair', zone='floor', confidence=0.88, last_seen=18:04:17)
+2026-06-23 18:04:17.457 | DEBUG    | memory.store:ingest:101 - Updated: ObjectRecord(label='person', zone='floor', confidence=0.85, last_seen=18:04:17)
+2026-06-23 18:04:17.457 | DEBUG    | core.engine:observe_frame:120 - Frame 65: 2 detection(s).
+2026-06-23 18:04:17.667 | DEBUG    | memory.store:ingest:101 - Updated: ObjectRecord(label='person', zone='floor', confidence=0.86, last_seen=18:04:17)
+2026-06-23 18:04:17.668 | DEBUG    | memory.store:ingest:101 - Updated: ObjectRecord(label='chair', zone='floor', confidence=0.81, last_seen=18:04:17)
+2026-06-23 18:04:17.668 | DEBUG    | core.engine:observe_frame:120 - Frame 66: 2 detection(s).
+2026-06-23 18:04:17.863 | DEBUG    | memory.store:ingest:101 - Updated: ObjectRecord(label='person', zone='floor', confidence=0.86, last_seen=18:04:17)
+2026-06-23 18:04:17.863 | DEBUG    | memory.store:ingest:101 - Updated: ObjectRecord(label='chair', zone='floor', confidence=0.83, last_seen=18:04:17)
+2026-06-23 18:04:17.863 | DEBUG    | core.engine:observe_frame:120 - Frame 67: 2 detection(s).
+2026-06-23 18:04:18.069 | DEBUG    | memory.store:ingest:101 - Updated: ObjectRecord(label='person', zone='floor', confidence=0.87, last_seen=18:04:18)
+2026-06-23 18:04:18.069 | DEBUG    | memory.store:ingest:101 - Updated: ObjectRecord(label='chair', zone='floor', confidence=0.86, last_seen=18:04:18)
+2026-06-23 18:04:18.070 | DEBUG    | core.engine:observe_frame:120 - Frame 68: 2 detection(s).
+2026-06-23 18:04:18.268 | DEBUG    | memory.store:ingest:101 - Updated: ObjectRecord(label='person', zone='floor', confidence=0.86, last_seen=18:04:18)
+2026-06-23 18:04:18.268 | DEBUG    | memory.store:ingest:101 - Updated: ObjectRecord(label='chair', zone='floor', confidence=0.85, last_seen=18:04:18)
+2026-06-23 18:04:18.268 | DEBUG    | core.engine:observe_frame:120 - Frame 69: 2 detection(s).
+2026-06-23 18:04:18.468 | DEBUG    | memory.store:ingest:101 - Updated: ObjectRecord(label='person', zone='floor', confidence=0.87, last_seen=18:04:18)
+2026-06-23 18:04:18.468 | DEBUG    | memory.store:ingest:101 - Updated: ObjectRecord(label='chair', zone='floor', confidence=0.83, last_seen=18:04:18)
+2026-06-23 18:04:18.468 | DEBUG    | core.engine:observe_frame:120 - Frame 70: 2 detection(s).
+2026-06-23 18:04:18.722 | DEBUG    | memory.store:ingest:101 - Updated: ObjectRecord(label='person', zone='floor', confidence=0.86, last_seen=18:04:18)
+2026-06-23 18:04:18.722 | DEBUG    | memory.store:ingest:101 - Updated: ObjectRecord(label='chair', zone='floor', confidence=0.80, last_seen=18:04:18)
+2026-06-23 18:04:18.722 | DEBUG    | core.engine:observe_frame:120 - Frame 71: 2 detection(s).
+2026-06-23 18:04:18.934 | DEBUG    | memory.store:ingest:101 - Updated: ObjectRecord(label='person', zone='floor', confidence=0.87, last_seen=18:04:18)
+2026-06-23 18:04:18.934 | DEBUG    | memory.store:ingest:101 - Updated: ObjectRecord(label='chair', zone='floor', confidence=0.83, last_seen=18:04:18)
+2026-06-23 18:04:18.934 | DEBUG    | core.engine:observe_frame:120 - Frame 72: 2 detection(s).
+2026-06-23 18:04:19.126 | DEBUG    | memory.store:ingest:101 - Updated: ObjectRecord(label='person', zone='floor', confidence=0.86, last_seen=18:04:19)
+2026-06-23 18:04:19.127 | DEBUG    | memory.store:ingest:101 - Updated: ObjectRecord(label='chair', zone='floor', confidence=0.77, last_seen=18:04:19)
+2026-06-23 18:04:19.127 | DEBUG    | core.engine:observe_frame:120 - Frame 73: 2 detection(s).
+2026-06-23 18:04:19.867 | INFO     | vision.frame_reader:close:88 - Video source closed.
+2026-06-23 18:04:30.538 | DEBUG    | memory.store:flush:217 - Memory flushed (3 records).
+2026-06-23 18:04:30.538 | INFO     | memory.store:stop:74 - MemoryStore stopped and flushed.
+2026-06-23 18:04:30.538 | INFO     | core.engine:stop:103 - MemoryMap engine stopped. Frames processed: 73.
+2026-06-23 18:05:48.451 | INFO     | vision.detector:__init__:87 - Loading YOLO model: yolov8n.pt
+2026-06-23 18:05:48.478 | INFO     | vision.detector:__init__:89 - YOLO detector ready.
+2026-06-23 18:05:48.479 | INFO     | memory.store:_load_from_disk:254 - Loaded 3 records from C:\Users\monfo\Downloads\MemoryMap\data\memory.json.
+2026-06-23 18:05:48.485 | INFO     | memory.store:start:66 - MemoryStore started (persist every 30s)
+2026-06-23 18:05:48.486 | INFO     | core.engine:start:86 - MemoryMap engine started (source=0, backend=yolo).
+2026-06-23 18:05:49.488 | DEBUG    | memory.store:flush:217 - Memory flushed (3 records).
+2026-06-23 18:05:49.579 | DEBUG    | query.handler:handle:162 - Query intent: FIND_OBJECT  text='how are you?'
+2026-06-23 18:05:49.579 | INFO     | core.engine:ask:136 - Query: 'how are you?' → 'I have no record of a how are you. It may not have been seen by the camera yet.'
+2026-06-23 18:07:28.270 | INFO     | vision.detector:__init__:87 - Loading YOLO model: yolov8n.pt
+2026-06-23 18:07:28.295 | INFO     | vision.detector:__init__:89 - YOLO detector ready.
+2026-06-23 18:07:28.297 | INFO     | memory.store:_load_from_disk:254 - Loaded 3 records from C:\Users\monfo\Downloads\MemoryMap\data\memory.json.
+2026-06-23 18:07:28.302 | INFO     | memory.store:start:66 - MemoryStore started (persist every 30s)
+2026-06-23 18:07:28.303 | INFO     | core.engine:start:86 - MemoryMap engine started (source=0, backend=yolo).
+2026-06-23 18:07:29.305 | DEBUG    | memory.store:flush:217 - Memory flushed (3 records).
+2026-06-23 18:07:48.813 | INFO     | vision.detector:__init__:87 - Loading YOLO model: yolov8n.pt
+2026-06-23 18:07:48.840 | INFO     | vision.detector:__init__:89 - YOLO detector ready.
+2026-06-23 18:07:48.841 | INFO     | memory.store:_load_from_disk:254 - Loaded 3 records from C:\Users\monfo\Downloads\MemoryMap\data\memory.json.
+2026-06-23 18:07:48.848 | INFO     | memory.store:start:66 - MemoryStore started (persist every 30s)
+2026-06-23 18:07:48.849 | INFO     | core.engine:start:86 - MemoryMap engine started (source=0, backend=yolo).
+2026-06-23 18:07:49.850 | DEBUG    | memory.store:flush:217 - Memory flushed (3 records).
+2026-06-23 18:08:12.188 | INFO     | vision.frame_reader:open:79 - Video source opened: 0 @ 640x480 (target FPS: 5)
+2026-06-23 18:08:13.452 | DEBUG    | core.engine:observe_frame:120 - Frame 1: 0 detection(s).
+2026-06-23 18:08:13.475 | DEBUG    | memory.store:ingest:101 - Updated: ObjectRecord(label='person', zone='floor', confidence=0.80, last_seen=18:08:13)
+2026-06-23 18:08:13.475 | DEBUG    | memory.store:ingest:101 - Updated: ObjectRecord(label='chair', zone='floor', confidence=0.77, last_seen=18:08:13)
+2026-06-23 18:08:13.475 | DEBUG    | core.engine:observe_frame:120 - Frame 2: 2 detection(s).
+2026-06-23 18:08:13.688 | DEBUG    | memory.store:ingest:101 - Updated: ObjectRecord(label='person', zone='floor', confidence=0.81, last_seen=18:08:13)
+2026-06-23 18:08:13.688 | DEBUG    | memory.store:ingest:101 - Updated: ObjectRecord(label='chair', zone='floor', confidence=0.80, last_seen=18:08:13)
+2026-06-23 18:08:13.688 | DEBUG    | core.engine:observe_frame:120 - Frame 3: 2 detection(s).
+2026-06-23 18:08:13.960 | DEBUG    | memory.store:ingest:101 - Updated: ObjectRecord(label='person', zone='floor', confidence=0.79, last_seen=18:08:13)
+2026-06-23 18:08:13.960 | DEBUG    | memory.store:ingest:101 - Updated: ObjectRecord(label='chair', zone='floor', confidence=0.76, last_seen=18:08:13)
+2026-06-23 18:08:13.960 | DEBUG    | core.engine:observe_frame:120 - Frame 4: 2 detection(s).
+2026-06-23 18:08:14.158 | DEBUG    | memory.store:ingest:101 - Updated: ObjectRecord(label='person', zone='floor', confidence=0.83, last_seen=18:08:14)
+2026-06-23 18:08:14.158 | DEBUG    | memory.store:ingest:101 - Updated: ObjectRecord(label='chair', zone='floor', confidence=0.79, last_seen=18:08:14)
+2026-06-23 18:08:14.158 | DEBUG    | core.engine:observe_frame:120 - Frame 5: 2 detection(s).
+2026-06-23 18:08:14.358 | DEBUG    | memory.store:ingest:101 - Updated: ObjectRecord(label='person', zone='floor', confidence=0.84, last_seen=18:08:14)
+2026-06-23 18:08:14.358 | DEBUG    | memory.store:ingest:101 - Updated: ObjectRecord(label='chair', zone='floor', confidence=0.82, last_seen=18:08:14)
+2026-06-23 18:08:14.358 | DEBUG    | core.engine:observe_frame:120 - Frame 6: 2 detection(s).
+2026-06-23 18:08:14.614 | DEBUG    | memory.store:ingest:101 - Updated: ObjectRecord(label='person', zone='floor', confidence=0.86, last_seen=18:08:14)
+2026-06-23 18:08:14.614 | DEBUG    | memory.store:ingest:101 - Updated: ObjectRecord(label='chair', zone='floor', confidence=0.79, last_seen=18:08:14)
+2026-06-23 18:08:14.614 | DEBUG    | core.engine:observe_frame:120 - Frame 7: 2 detection(s).
+2026-06-23 18:08:14.827 | DEBUG    | memory.store:ingest:101 - Updated: ObjectRecord(label='person', zone='floor', confidence=0.84, last_seen=18:08:14)
+2026-06-23 18:08:14.828 | DEBUG    | memory.store:ingest:101 - Updated: ObjectRecord(label='chair', zone='floor', confidence=0.79, last_seen=18:08:14)
+2026-06-23 18:08:14.828 | DEBUG    | core.engine:observe_frame:120 - Frame 8: 2 detection(s).
+2026-06-23 18:08:15.015 | DEBUG    | memory.store:ingest:101 - Updated: ObjectRecord(label='person', zone='floor', confidence=0.86, last_seen=18:08:15)
+2026-06-23 18:08:15.015 | DEBUG    | memory.store:ingest:101 - Updated: ObjectRecord(label='chair', zone='floor', confidence=0.78, last_seen=18:08:15)
+2026-06-23 18:08:15.015 | DEBUG    | core.engine:observe_frame:120 - Frame 9: 2 detection(s).
+2026-06-23 18:08:15.220 | DEBUG    | memory.store:ingest:101 - Updated: ObjectRecord(label='person', zone='floor', confidence=0.83, last_seen=18:08:15)
+2026-06-23 18:08:15.220 | DEBUG    | memory.store:ingest:101 - Updated: ObjectRecord(label='chair', zone='floor', confidence=0.76, last_seen=18:08:15)
+2026-06-23 18:08:15.220 | DEBUG    | core.engine:observe_frame:120 - Frame 10: 2 detection(s).
+2026-06-23 18:10:09.169 | INFO     | vision.detector:__init__:87 - Loading YOLO model: yolov8n.pt
+2026-06-23 18:10:09.200 | INFO     | vision.detector:__init__:89 - YOLO detector ready.
+2026-06-23 18:10:09.201 | INFO     | memory.store:_load_from_disk:254 - Loaded 3 records from C:\Users\monfo\Downloads\MemoryMap\data\memory.json.
+2026-06-23 18:10:09.202 | INFO     | memory.store:start:66 - MemoryStore started (persist every 30s)
+2026-06-23 18:10:10.204 | DEBUG    | memory.store:flush:217 - Memory flushed (3 records).
+2026-06-23 18:10:34.806 | DEBUG    | query.handler:handle:162 - Query intent: FIND_OBJECT  text='where is my suitcase'
+2026-06-23 18:10:34.806 | INFO     | core.engine:ask:136 - Query: 'where is my suitcase' → 'Your suitcase was last seen on the floor 6 minutes ago (low confidence — may be misidentified).'
+2026-06-23 18:10:40.218 | DEBUG    | memory.store:flush:217 - Memory flushed (3 records).
+2026-06-23 18:11:09.105 | INFO     | vision.detector:__init__:87 - Loading YOLO model: yolov8n.pt
+2026-06-23 18:11:09.129 | INFO     | vision.detector:__init__:89 - YOLO detector ready.
+2026-06-23 18:11:09.129 | INFO     | memory.store:_load_from_disk:254 - Loaded 3 records from C:\Users\monfo\Downloads\MemoryMap\data\memory.json.
+2026-06-23 18:11:09.131 | INFO     | memory.store:start:66 - MemoryStore started (persist every 30s)
+2026-06-23 18:11:10.133 | DEBUG    | memory.store:flush:217 - Memory flushed (3 records).
+2026-06-23 18:11:13.352 | DEBUG    | query.handler:handle:162 - Query intent: FIND_OBJECT  text='where are my keys'
+2026-06-23 18:11:13.352 | INFO     | core.engine:ask:136 - Query: 'where are my keys' → 'I have no record of a keys. It may not have been seen by the camera yet.'
+2026-06-23 18:11:20.791 | DEBUG    | query.handler:handle:162 - Query intent: FIND_OBJECT  text='where is my key'
+2026-06-23 18:11:20.791 | INFO     | core.engine:ask:136 - Query: 'where is my key' → 'I have no record of a key. It may not have been seen by the camera yet.'
+2026-06-23 18:11:27.166 | DEBUG    | query.handler:handle:162 - Query intent: FIND_OBJECT  text='where is my suitcase'
+2026-06-23 18:11:27.166 | INFO     | core.engine:ask:136 - Query: 'where is my suitcase' → 'Your suitcase was last seen on the floor 7 minutes ago (low confidence — may be misidentified).'
+2026-06-23 18:12:11.962 | INFO     | vision.detector:__init__:87 - Loading YOLO model: yolov8n.pt
+2026-06-23 18:12:11.988 | INFO     | vision.detector:__init__:89 - YOLO detector ready.
+2026-06-23 18:12:11.988 | INFO     | memory.store:_load_from_disk:254 - Loaded 3 records from C:\Users\monfo\Downloads\MemoryMap\data\memory.json.
+2026-06-23 18:12:11.989 | INFO     | memory.store:start:66 - MemoryStore started (persist every 30s)
+2026-06-23 18:12:12.992 | DEBUG    | memory.store:flush:217 - Memory flushed (3 records).
+2026-06-23 18:12:43.003 | DEBUG    | memory.store:flush:217 - Memory flushed (3 records).
+2026-06-23 18:13:13.017 | DEBUG    | memory.store:flush:217 - Memory flushed (3 records).
+2026-06-23 18:13:43.030 | DEBUG    | memory.store:flush:217 - Memory flushed (3 records).
+2026-06-23 18:14:13.227 | DEBUG    | memory.store:flush:217 - Memory flushed (3 records).
+2026-06-23 18:14:47.813 | INFO     | vision.detector:__init__:87 - Loading YOLO model: yolov8n.pt
+2026-06-23 18:14:47.841 | INFO     | vision.detector:__init__:89 - YOLO detector ready.
+2026-06-23 18:14:47.842 | INFO     | memory.store:_load_from_disk:254 - Loaded 3 records from C:\Users\monfo\Downloads\MemoryMap\data\memory.json.
+2026-06-23 18:14:47.842 | INFO     | memory.store:start:66 - MemoryStore started (persist every 30s)
+2026-06-23 18:14:48.845 | DEBUG    | memory.store:flush:217 - Memory flushed (3 records).
+2026-06-23 18:15:18.858 | DEBUG    | memory.store:flush:217 - Memory flushed (3 records).
+2026-06-23 18:16:25.531 | INFO     | vision.detector:__init__:87 - Loading YOLO model: yolov8n.pt
+2026-06-23 18:16:25.555 | INFO     | vision.detector:__init__:89 - YOLO detector ready.
+2026-06-23 18:16:25.555 | INFO     | memory.store:_load_from_disk:254 - Loaded 3 records from C:\Users\monfo\Downloads\MemoryMap\data\memory.json.
+2026-06-23 18:16:25.556 | INFO     | memory.store:start:66 - MemoryStore started (persist every 30s)
+2026-06-23 18:16:26.558 | DEBUG    | memory.store:flush:217 - Memory flushed (3 records).
+2026-06-23 18:16:56.572 | DEBUG    | memory.store:flush:217 - Memory flushed (3 records).
+2026-06-23 18:18:13.535 | INFO     | vision.detector:__init__:87 - Loading YOLO model: yolov8n.pt
+2026-06-23 18:18:13.559 | INFO     | vision.detector:__init__:89 - YOLO detector ready.
+2026-06-23 18:18:13.560 | INFO     | memory.store:_load_from_disk:254 - Loaded 3 records from C:\Users\monfo\Downloads\MemoryMap\data\memory.json.
+2026-06-23 18:18:13.560 | INFO     | memory.store:start:66 - MemoryStore started (persist every 30s)
+2026-06-23 18:18:14.563 | DEBUG    | memory.store:flush:217 - Memory flushed (3 records).
+2026-06-23 18:18:44.574 | DEBUG    | memory.store:flush:217 - Memory flushed (3 records).
+2026-06-23 18:19:04.583 | DEBUG    | memory.store:flush:217 - Memory flushed (3 records).
+2026-06-23 18:19:04.583 | INFO     | memory.store:stop:74 - MemoryStore stopped and flushed.
+2026-06-23 18:19:12.122 | INFO     | vision.detector:__init__:87 - Loading YOLO model: yolov8n.pt
+2026-06-23 18:19:12.151 | INFO     | vision.detector:__init__:89 - YOLO detector ready.
+2026-06-23 18:19:12.152 | INFO     | memory.store:_load_from_disk:254 - Loaded 3 records from C:\Users\monfo\Downloads\MemoryMap\data\memory.json.
+2026-06-23 18:19:12.153 | INFO     | memory.store:start:66 - MemoryStore started (persist every 30s)
+2026-06-23 18:19:13.156 | DEBUG    | memory.store:flush:217 - Memory flushed (3 records).
+2026-06-23 18:19:31.356 | DEBUG    | query.handler:handle:162 - Query intent: FIND_OBJECT  text='where is my suitcase'
+2026-06-23 18:19:31.356 | INFO     | core.engine:ask:136 - Query: 'where is my suitcase' → 'Your suitcase was last seen on the floor 15 minutes ago (low confidence — may be misidentified).'
+2026-06-23 18:19:37.752 | DEBUG    | query.handler:handle:162 - Query intent: FIND_OBJECT  text='where is my bottle'
+2026-06-23 18:19:37.752 | INFO     | core.engine:ask:136 - Query: 'where is my bottle' → 'I have no record of a bottle. It may not have been seen by the camera yet.'
+2026-06-23 18:19:43.171 | DEBUG    | memory.store:flush:217 - Memory flushed (3 records).
+2026-06-23 18:20:04.509 | INFO     | vision.detector:__init__:87 - Loading YOLO model: yolov8n.pt
+2026-06-23 18:20:04.533 | INFO     | vision.detector:__init__:89 - YOLO detector ready.
+2026-06-23 18:20:04.534 | INFO     | memory.store:_load_from_disk:254 - Loaded 3 records from C:\Users\monfo\Downloads\MemoryMap\data\memory.json.
+2026-06-23 18:20:04.534 | INFO     | memory.store:start:66 - MemoryStore started (persist every 30s)
+2026-06-23 18:20:05.537 | DEBUG    | memory.store:flush:217 - Memory flushed (3 records).
+2026-06-23 18:20:35.548 | DEBUG    | memory.store:flush:217 - Memory flushed (3 records).
+2026-06-23 18:21:09.982 | INFO     | vision.detector:__init__:87 - Loading YOLO model: yolov8n.pt
+2026-06-23 18:21:10.005 | INFO     | vision.detector:__init__:89 - YOLO detector ready.
+2026-06-23 18:21:10.006 | INFO     | memory.store:_load_from_disk:254 - Loaded 3 records from C:\Users\monfo\Downloads\MemoryMap\data\memory.json.
+2026-06-23 18:21:10.007 | INFO     | memory.store:start:66 - MemoryStore started (persist every 30s)
+2026-06-23 18:21:11.010 | DEBUG    | memory.store:flush:217 - Memory flushed (3 records).
+2026-06-23 23:36:13.946 | DEBUG    | memory.store:flush:217 - Memory flushed (3 records).
+2026-06-23 23:36:40.019 | DEBUG    | memory.store:flush:217 - Memory flushed (3 records).
+2026-06-23 23:37:10.032 | DEBUG    | memory.store:flush:217 - Memory flushed (3 records).

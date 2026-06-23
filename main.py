@@ -1,39 +1,50 @@
 """
-MemoryMap — Entry Point
-CLI for running the engine, asking queries, and starting the API server.
-
-Usage:
-  python main.py --source 0                    # webcam
-  python main.py --source /path/to/video.mp4   # video file
-  python main.py --query "Where are my keys?"  # one-shot query
-  python main.py --api-only                    # API server, no camera
-  python main.py --backend claude              # use Claude Vision
+MemoryMap — Simple Question Interface
+Just ask questions about objects you've seen.
 """
 
 from __future__ import annotations
 
 import signal
 import sys
-import time
 from pathlib import Path
 
-import click
+import cv2
 from loguru import logger
 from rich.console import Console
-from rich.table import Table
 
 console = Console()
 
 
-def _setup_logging(verbose: bool) -> None:
+def _get_lan_ip() -> str:
+    """Get the local network IP address."""
+    import socket
+    try:
+        s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+        s.connect(("8.8.8.8", 80))
+        ip = s.getsockname()[0]
+        s.close()
+        return ip
+    except Exception:
+        return "127.0.0.1"
+
+
+def _print_qr_code(url: str) -> None:
+    """Generate and display a QR code for easy phone access."""
+    try:
+        import qrcode
+        qr = qrcode.QRCode(version=1, box_size=10, border=5)
+        qr.add_data(url)
+        qr.make(fit=True)
+        console.print("\n[cyan]Scan this QR code with your phone:[/cyan]\n")
+        qr.print_ascii()
+    except ImportError:
+        pass
+    console.print(f"[cyan]Or visit: {url}[/cyan]\n")
+
+
+def _setup_logging() -> None:
     logger.remove()
-    level = "DEBUG" if verbose else "INFO"
-    logger.add(
-        sys.stderr,
-        format="<green>{time:HH:mm:ss}</green> | <level>{level:<8}</level> | {message}",
-        level=level,
-        colorize=True,
-    )
     logger.add(
         "data/logs/memorymap.log",
         rotation="10 MB",
@@ -42,117 +53,98 @@ def _setup_logging(verbose: bool) -> None:
     )
 
 
-@click.command()
-@click.option("--source",   default="0",    show_default=True, help="Camera device ID or video file path.")
-@click.option("--backend",  default=None,                      help="Detection backend: 'yolo' or 'claude'.")
-@click.option("--query",    default=None,                      help="Run a one-shot query and exit.")
-@click.option("--phone",    is_flag=True,                      help="Accept frames from your phone camera over Wi-Fi.")
-@click.option("--api-only", is_flag=True,                      help="Start API server without local camera loop.")
-@click.option("--api-port", default=8000,   show_default=True, help="Main API server port.")
-@click.option("--verbose",  is_flag=True,                      help="Enable debug logging.")
-def main(source, backend, query, phone, api_only, api_port, verbose):
-    """MemoryMap — a second brain for physical space."""
-    _setup_logging(verbose)
+def main():
+    """MemoryMap — Ask questions about your physical space."""
+    _setup_logging()
 
     from core.engine import MemoryMapEngine
-    from core.config import PHONE_STREAM_PORT
 
-    engine = MemoryMapEngine(source=source, backend=backend)
+    console.print("\n[bold cyan]━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[/bold cyan]")
+    console.print("[bold cyan]   MemoryMap — Ask About Your Space[/bold cyan]")
+    console.print("[bold cyan]━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[/bold cyan]\n")
 
-    # ── One-shot query mode ────────────────────────────────────────────────
-    if query:
-        engine.store.start()
-        answer = engine.ask(query)
-        console.print(f"\n[bold cyan]Q:[/bold cyan] {query}")
-        console.print(f"[bold green]A:[/bold green] {answer}\n")
-        engine.store.stop()
-        return
+    console.print("[cyan]How do you want to add images?[/cyan]")
+    console.print("  1) Use your webcam (default)")
+    console.print("  2) Stream from your phone camera\n")
 
-    # ── Get LAN IP for display ─────────────────────────────────────────────
-    lan_ip = _get_lan_ip()
+    choice = input("Choose [1 or 2]: ").strip()
 
-    # ── API-only mode (no local camera) ───────────────────────────────────
-    if api_only:
-        engine.store.start(phone_stream=phone) if phone else engine.store.start()
-        if phone:
-            from vision.phone_stream import PhoneStreamServer
-            PhoneStreamServer(engine, port=PHONE_STREAM_PORT).run_in_thread()
-        _print_startup_banner(lan_ip, api_port, PHONE_STREAM_PORT, phone)
-        _start_api(engine, port=api_port)
-        return
+    engine = MemoryMapEngine(source=0, backend=None)
+    engine.store.start()
 
-    # ── Full mode ─────────────────────────────────────────────────────────
-    _print_startup_banner(lan_ip, api_port, PHONE_STREAM_PORT, phone)
+    if choice == "2":
+        # Start iPhone Shortcuts interface
+        lan_ip = _get_lan_ip()
+        lan_url = f"http://{lan_ip}:8000/phone-stream"
+        
+        console.print("\n[yellow]📱 iPhone Shortcuts Setup[/yellow]")
+        console.print("[dim]Starting API server…[/dim]\n")
+        
+        console.print("[cyan]Step 1: On your iPhone, open the Shortcuts app[/cyan]")
+        console.print(f"[cyan]Step 2: Visit this page for instructions:[/cyan]")
+        console.print(f"  [cyan]{lan_url}[/cyan]\n")
+        
+        _print_qr_code(lan_url)
+        
+        console.print("[green]Your Computer IP (use in Shortcut):[/green]")
+        console.print(f"  [yellow]{lan_ip}:8000[/yellow]\n")
+        
+        console.print("[cyan]The Shortcut will send photos to:[/cyan]")
+        console.print(f"  [green]http://{lan_ip}:8000/observe[/green]\n")
+        
+        # Start API server in background
+        import threading
+        import uvicorn
+        from api.server import create_app
+        
+        app = create_app(engine)
+        api_thread = threading.Thread(
+            target=lambda: uvicorn.run(app, host="0.0.0.0", port=8000, log_level="critical"),
+            daemon=True
+        )
+        api_thread.start()
+        
+    else:
+        console.print("\n[cyan]📷 Webcam mode[/cyan]\n")
 
-    engine.start(phone_stream=phone)
+    console.print("[green]Examples:[/green]")
+    console.print("  • Where are my keys?")
+    console.print("  • What's on my desk?")
+    console.print("  • What can you see right now?")
+    console.print("  • When did I last see my wallet?\n")
+
+    console.print("[yellow]Type 'quit' or 'exit' to stop[/yellow]\n")
 
     def _shutdown(sig, frame):
         console.print("\n[yellow]Shutting down…[/yellow]")
-        engine.stop()
+        engine.store.stop()
         sys.exit(0)
 
     signal.signal(signal.SIGINT, _shutdown)
     signal.signal(signal.SIGTERM, _shutdown)
 
-    import threading
-    api_thread = threading.Thread(
-        target=_start_api, args=(engine,), kwargs={"port": api_port}, daemon=True
-    )
-    api_thread.start()
-
-    console.print("\n[dim]Type a query and press Enter, or Ctrl+C to quit.[/dim]\n")
     while True:
         try:
-            user_input = input("MemoryMap › ").strip()
+            user_input = input("[bold cyan]❓ Ask:[/bold cyan] ").strip()
             if not user_input:
                 continue
             if user_input.lower() in ("exit", "quit", "q"):
+                console.print("\n[green]Goodbye![/green]")
                 break
+
             answer = engine.ask(user_input)
-            console.print(f"  [bold green]→[/bold green] {answer}\n")
+            console.print(f"[bold green]✓ Answer:[/bold green] {answer}\n")
+
         except EOFError:
             break
+        except KeyboardInterrupt:
+            console.print("\n[yellow]Shutting down…[/yellow]")
+            break
+        except Exception as e:
+            logger.error("Error: {}", e)
+            console.print(f"[red]Error:[/red] {e}\n")
 
-    engine.stop()
-    console.print("[green]Goodbye.[/green]")
-
-
-def _start_api(engine, port: int = 8000) -> None:
-    """Start the FastAPI server (blocking)."""
-    import uvicorn
-    from api.server import create_app
-
-    app = create_app(engine)
-    uvicorn.run(app, host="0.0.0.0", port=port, log_level="warning")
-
-
-def _print_memory_table(engine) -> None:
-    """Print the current memory state as a Rich table."""
-    records = engine.store.all()
-    if not records:
-        console.print("[dim]Memory is empty.[/dim]")
-        return
-
-    table = Table(title="MemoryMap — Current Memory", show_lines=True)
-    table.add_column("Label",    style="cyan")
-    table.add_column("Zone",     style="yellow")
-    table.add_column("Conf",     justify="right")
-    table.add_column("Last Seen")
-    table.add_column("Obs", justify="right")
-    table.add_column("Stale")
-
-    for r in sorted(records, key=lambda x: x.last_seen, reverse=True):
-        stale_str = "[red]✗[/red]" if r.is_stale else "[green]✓[/green]"
-        table.add_row(
-            r.label,
-            r.location.zone,
-            f"{r.confidence:.2f}",
-            r.last_seen.strftime("%H:%M:%S"),
-            str(r.observation_count),
-            stale_str,
-        )
-
-    console.print(table)
+    engine.store.stop()
 
 
 if __name__ == "__main__":

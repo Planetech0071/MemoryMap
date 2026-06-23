@@ -138,3 +138,9 @@ Key settings:
 "I can't find my wallet."
 → "Wallet not in current view. Last recorded location: bedroom shelf, 3 hours ago."
 ```
+
+## AI Usage
+```
+CHATGPT and CLAUDE for brainstorming and very short debug sessions
+GEMINI for cover image
+V0 for the help with frontend DEMO version.

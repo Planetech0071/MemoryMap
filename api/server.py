@@ -21,7 +21,7 @@ from typing import Optional
 
 import cv2
 import numpy as np
-from fastapi import FastAPI, HTTPException, WebSocket, WebSocketDisconnect
+from fastapi import FastAPI, Form, HTTPException, Request, WebSocket, WebSocketDisconnect
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import HTMLResponse
 from pydantic import BaseModel
@@ -33,7 +33,11 @@ from memory.store import MemoryStore
 
 # ── App factory ────────────────────────────────────────────────────────────
 
-def create_app(engine: MemoryMapEngine) -> FastAPI:
+def create_app(
+    engine: MemoryMapEngine,
+    server_ip: str = "YOUR_COMPUTER_IP",
+    on_detections=None,   # optional callback(labels: list[str], total: int)
+) -> FastAPI:
     app = FastAPI(
         title="MemoryMap API",
         description="A second brain for physical space.",
@@ -66,71 +70,72 @@ def create_app(engine: MemoryMapEngine) -> FastAPI:
     @app.get("/phone-stream", tags=["Vision"])
     async def phone_stream_page():
         """HTML page for phone camera stream."""
-        html_content = """
+        observe_url = f"http://{server_ip}:8000/observe"
+        html_content = f"""
         <!DOCTYPE html>
         <html>
         <head>
             <title>MemoryMap — iPhone Shortcuts</title>
             <meta name="viewport" content="width=device-width, initial-scale=1">
             <style>
-                body {
+                body {{
                     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
                     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
                     min-height: 100vh;
                     margin: 0;
                     padding: 20px;
-                }
-                .container {
+                }}
+                .container {{
                     background: white;
                     border-radius: 12px;
                     padding: 30px;
                     box-shadow: 0 10px 40px rgba(0,0,0,0.3);
                     max-width: 600px;
                     margin: 0 auto;
-                }
-                h1 {
+                }}
+                h1 {{
                     color: #333;
                     margin: 0 0 10px 0;
-                }
-                .subtitle {
+                }}
+                .subtitle {{
                     color: #666;
                     margin-bottom: 30px;
                     font-size: 14px;
-                }
-                .section {
+                }}
+                .section {{
                     margin: 30px 0;
                     padding: 20px;
                     background: #f5f5f5;
                     border-radius: 8px;
                     border-left: 4px solid #667eea;
-                }
-                .section h2 {
+                }}
+                .section h2 {{
                     margin: 0 0 15px 0;
                     font-size: 18px;
                     color: #333;
-                }
-                .steps {
+                }}
+                .steps {{
                     list-style: none;
                     padding: 0;
-                }
-                .steps li {
+                }}
+                .steps li {{
                     padding: 8px 0;
                     color: #555;
-                }
-                .steps li:before {
+                }}
+                .steps li:before {{
                     content: "→ ";
                     color: #667eea;
                     font-weight: bold;
                     margin-right: 8px;
-                }
-                code {
+                }}
+                code {{
                     background: #eee;
                     padding: 2px 6px;
                     border-radius: 3px;
                     font-family: monospace;
                     font-size: 13px;
-                }
-                .endpoint {
+                }}
+                .endpoint {{
                     background: #333;
                     color: #0f0;
                     padding: 15px;
@@ -139,15 +144,15 @@ def create_app(engine: MemoryMapEngine) -> FastAPI:
                     font-size: 13px;
                     margin: 15px 0;
                     word-break: break-all;
-                }
-                .info {
+                }}
+                .info {{
                     background: #e7f3ff;
                     border-left: 4px solid #2196F3;
                     padding: 15px;
                     border-radius: 4px;
                     margin: 15px 0;
                     color: #0277BD;
-                }
+                }}
             </style>
         </head>
         <body>
@@ -190,13 +195,16 @@ def create_app(engine: MemoryMapEngine) -> FastAPI:
                     
                     <div style="background: #fff; padding: 15px; border: 1px solid #ddd; border-radius: 6px; margin: 10px 0;">
                         <strong>URL:</strong>
-                        <div class="endpoint">http://YOUR_IP:8000/observe</div>
-                        
-                        <strong style="display: block; margin-top: 10px;">Headers:</strong>
-                        <code>Content-Type: application/json</code>
-                        
-                        <strong style="display: block; margin-top: 10px;">Body (form, not JSON):</strong>
-                        <code>image_b64 = [base64 data from step 3]</code>
+                        <div class="endpoint">{observe_url}</div>
+
+                        <strong style="display: block; margin-top: 10px;">Method:</strong>
+                        <code>POST</code>
+
+                        <strong style="display: block; margin-top: 10px;">Request Body:</strong>
+                        <code>JSON</code>
+
+                        <strong style="display: block; margin-top: 10px;">Body fields (key → value):</strong>
+                        <code>image_b64</code> → [base64 encoded data from step 3]
                     </div>
                     
                     <h3>5️⃣ Wait</h3>
@@ -274,31 +282,69 @@ def create_app(engine: MemoryMapEngine) -> FastAPI:
         image_b64: str       # Base64-encoded JPEG
         mime_type: str = "image/jpeg"
 
+    async def _decode_and_run(image_b64: str) -> dict:
+        """Shared logic: decode base64 frame, run detection, return result."""
+        # iPhone Shortcuts sometimes prepends a data-URI prefix — strip it
+        if "," in image_b64 and image_b64.startswith("data:"):
+            image_b64 = image_b64.split(",", 1)[1]
+
+        # Remove any whitespace/newlines that can sneak in
+        image_b64 = image_b64.strip()
+
+        if len(image_b64) < 100:
+            raise HTTPException(status_code=400, detail="Image data too small")
+
+        try:
+            img_bytes = base64.b64decode(image_b64)
+        except Exception:
+            raise HTTPException(status_code=400, detail="Invalid base64 data")
+
+        arr = np.frombuffer(img_bytes, dtype=np.uint8)
+        frame = cv2.imdecode(arr, cv2.IMREAD_COLOR)
+
+        if frame is None:
+            raise HTTPException(status_code=400, detail="Could not decode image — make sure it is a JPEG")
+
+        count = engine.observe_frame(frame)
+        total = engine.store.object_count()
+
+        # Fire the detection callback so main.py can print to console
+        if on_detections and count > 0:
+            recent = engine.store.all_current()
+            labels = [r.label for r in sorted(recent, key=lambda r: r.last_seen, reverse=True)][:count]
+            try:
+                on_detections(labels, total)
+            except Exception:
+                pass  # never let a callback crash the API
+
+        return {"status": "ok", "detections": count, "total_objects": total}
+
     @app.post("/observe", tags=["Vision"])
-    async def observe(req: ObserveRequest):
+    async def observe(request: Request):
         """
         Submit a single frame for object detection and memory update.
-        image_b64: base64-encoded JPEG image.
+
+        Accepts two content types so iPhone Shortcuts works out of the box:
+          • application/json      → { "image_b64": "<base64 JPEG>" }
+          • application/x-www-form-urlencoded or multipart/form-data
+                                  → image_b64=<base64 JPEG>
         """
+        content_type = request.headers.get("content-type", "")
+
         try:
-            if not req.image_b64 or len(req.image_b64) < 100:
-                raise HTTPException(status_code=400, detail="Image data too small")
-            
-            img_bytes = base64.b64decode(req.image_b64)
-            arr = np.frombuffer(img_bytes, dtype=np.uint8)
-            frame = cv2.imdecode(arr, cv2.IMREAD_COLOR)
-            
-            if frame is None:
-                raise HTTPException(status_code=400, detail="Could not decode image")
-            
-            count = engine.observe_frame(frame)
-            total = engine.store.object_count()
-            
-            return {
-                "status": "ok",
-                "detections": count, 
-                "total_objects": total
-            }
+            if "application/json" in content_type:
+                body = await request.json()
+                image_b64 = body.get("image_b64", "")
+            else:
+                # Form data (application/x-www-form-urlencoded or multipart)
+                form = await request.form()
+                image_b64 = form.get("image_b64", "")
+
+            if not image_b64:
+                raise HTTPException(status_code=400, detail="Missing image_b64 field")
+
+            return await _decode_and_run(str(image_b64))
+
         except HTTPException:
             raise
         except Exception as exc:

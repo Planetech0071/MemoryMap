@@ -300,3 +300,378 @@
 2026-06-23 23:36:13.946 | DEBUG    | memory.store:flush:217 - Memory flushed (3 records).
 2026-06-23 23:36:40.019 | DEBUG    | memory.store:flush:217 - Memory flushed (3 records).
 2026-06-23 23:37:10.032 | DEBUG    | memory.store:flush:217 - Memory flushed (3 records).
+2026-06-23 23:48:13.854 | INFO     | vision.detector:__init__:87 - Loading YOLO model: yolov8n.pt
+2026-06-23 23:48:13.879 | INFO     | vision.detector:__init__:89 - YOLO detector ready.
+2026-06-23 23:48:13.879 | INFO     | memory.store:_load_from_disk:254 - Loaded 3 records from C:\Users\monfo\Downloads\MemoryMap\data\memory.json.
+2026-06-23 23:48:13.880 | INFO     | memory.store:start:66 - MemoryStore started (persist every 30s)
+2026-06-23 23:48:14.881 | DEBUG    | memory.store:flush:217 - Memory flushed (3 records).
+2026-06-23 23:48:44.893 | DEBUG    | memory.store:flush:217 - Memory flushed (3 records).
+2026-06-23 23:49:14.908 | DEBUG    | memory.store:flush:217 - Memory flushed (3 records).
+2026-06-23 23:49:44.919 | DEBUG    | memory.store:flush:217 - Memory flushed (3 records).
+2026-06-23 23:50:14.929 | DEBUG    | memory.store:flush:217 - Memory flushed (3 records).
+2026-06-23 23:50:44.942 | DEBUG    | memory.store:flush:217 - Memory flushed (3 records).
+2026-06-23 23:51:14.954 | DEBUG    | memory.store:flush:217 - Memory flushed (3 records).
+2026-06-23 23:51:44.967 | DEBUG    | memory.store:flush:217 - Memory flushed (3 records).
+2026-06-23 23:52:00.374 | DEBUG    | query.handler:handle:162 - Query intent: FIND_OBJECT  text='2'
+2026-06-23 23:52:00.374 | INFO     | core.engine:ask:149 - Query: '2' → "I didn't understand that query. Try asking 'Where is my X?' or 'What's on my desk?'"
+2026-06-23 23:52:10.498 | INFO     | vision.detector:__init__:87 - Loading YOLO model: yolov8n.pt
+2026-06-23 23:52:10.522 | INFO     | vision.detector:__init__:89 - YOLO detector ready.
+2026-06-23 23:52:10.523 | INFO     | memory.store:_load_from_disk:254 - Loaded 3 records from C:\Users\monfo\Downloads\MemoryMap\data\memory.json.
+2026-06-23 23:52:10.523 | INFO     | memory.store:start:66 - MemoryStore started (persist every 30s)
+2026-06-23 23:52:11.524 | DEBUG    | memory.store:flush:217 - Memory flushed (3 records).
+2026-06-23 23:52:41.535 | DEBUG    | memory.store:flush:217 - Memory flushed (3 records).
+2026-06-23 23:53:11.546 | DEBUG    | memory.store:flush:217 - Memory flushed (3 records).
+2026-06-23 23:53:41.558 | DEBUG    | memory.store:flush:217 - Memory flushed (3 records).
+2026-06-23 23:54:11.571 | DEBUG    | memory.store:flush:217 - Memory flushed (3 records).
+2026-06-23 23:54:41.587 | DEBUG    | memory.store:flush:217 - Memory flushed (3 records).
+2026-06-23 23:55:11.603 | DEBUG    | memory.store:flush:217 - Memory flushed (3 records).
+2026-06-23 23:55:41.620 | DEBUG    | memory.store:flush:217 - Memory flushed (3 records).
+2026-06-23 23:56:11.636 | DEBUG    | memory.store:flush:217 - Memory flushed (3 records).
+2026-06-23 23:56:41.653 | DEBUG    | memory.store:flush:217 - Memory flushed (3 records).
+2026-06-23 23:57:11.747 | DEBUG    | memory.store:flush:217 - Memory flushed (3 records).
+2026-06-23 23:57:19.577 | INFO     | memory.store:ingest:114 - New object: ObjectRecord(label='keyboard', zone='floor', confidence=0.87, last_seen=23:57:18)
+2026-06-23 23:57:19.577 | INFO     | memory.store:ingest:114 - New object: ObjectRecord(label='tv', zone='shelf', confidence=0.64, last_seen=23:57:18)
+2026-06-23 23:57:19.577 | DEBUG    | core.engine:observe_frame:133 - Frame 1: 2 detection(s).
+2026-06-23 23:57:40.733 | DEBUG    | query.handler:handle:162 - Query intent: CURRENT_VIEW  text='what can you see?'
+2026-06-23 23:57:40.733 | INFO     | core.engine:ask:149 - Query: 'what can you see?' → 'Currently visible: keyboard and tv.'
+2026-06-23 23:57:41.765 | DEBUG    | memory.store:flush:217 - Memory flushed (5 records).
+2026-06-23 23:57:53.039 | DEBUG    | core.engine:observe_frame:133 - Frame 2: 0 detection(s).
+2026-06-23 23:57:55.872 | DEBUG    | query.handler:handle:162 - Query intent: CURRENT_VIEW  text='what can you see?'
+2026-06-23 23:57:55.872 | INFO     | core.engine:ask:149 - Query: 'what can you see?' → 'Nothing is currently visible in the camera view.'
+2026-06-23 23:57:57.576 | DEBUG    | query.handler:handle:162 - Query intent: CURRENT_VIEW  text='what can you see?'
+2026-06-23 23:57:57.576 | INFO     | core.engine:ask:149 - Query: 'what can you see?' → 'Nothing is currently visible in the camera view.'
+2026-06-23 23:57:58.238 | DEBUG    | query.handler:handle:162 - Query intent: CURRENT_VIEW  text='what can you see?'
+2026-06-23 23:57:58.238 | INFO     | core.engine:ask:149 - Query: 'what can you see?' → 'Nothing is currently visible in the camera view.'
+2026-06-23 23:57:58.779 | DEBUG    | query.handler:handle:162 - Query intent: CURRENT_VIEW  text='what can you see?'
+2026-06-23 23:57:58.779 | INFO     | core.engine:ask:149 - Query: 'what can you see?' → 'Nothing is currently visible in the camera view.'
+2026-06-23 23:58:02.106 | DEBUG    | query.handler:handle:162 - Query intent: CURRENT_VIEW  text='what can you see?'
+2026-06-23 23:58:02.106 | INFO     | core.engine:ask:149 - Query: 'what can you see?' → 'Nothing is currently visible in the camera view.'
+2026-06-23 23:58:02.785 | DEBUG    | query.handler:handle:162 - Query intent: CURRENT_VIEW  text='what can you see?'
+2026-06-23 23:58:02.785 | INFO     | core.engine:ask:149 - Query: 'what can you see?' → 'Nothing is currently visible in the camera view.'
+2026-06-23 23:58:03.380 | DEBUG    | query.handler:handle:162 - Query intent: CURRENT_VIEW  text='what can you see?'
+2026-06-23 23:58:03.380 | INFO     | core.engine:ask:149 - Query: 'what can you see?' → 'Nothing is currently visible in the camera view.'
+2026-06-23 23:58:09.943 | DEBUG    | core.engine:observe_frame:133 - Frame 3: 0 detection(s).
+2026-06-23 23:58:11.782 | DEBUG    | memory.store:flush:217 - Memory flushed (5 records).
+2026-06-23 23:58:11.810 | DEBUG    | query.handler:handle:162 - Query intent: CURRENT_VIEW  text='what can you see?'
+2026-06-23 23:58:11.810 | INFO     | core.engine:ask:149 - Query: 'what can you see?' → 'Nothing is currently visible in the camera view.'
+2026-06-23 23:58:12.896 | DEBUG    | query.handler:handle:162 - Query intent: CURRENT_VIEW  text='what can you see?'
+2026-06-23 23:58:12.897 | INFO     | core.engine:ask:149 - Query: 'what can you see?' → 'Nothing is currently visible in the camera view.'
+2026-06-23 23:58:17.735 | INFO     | memory.store:ingest:114 - New object: ObjectRecord(label='keyboard', zone='floor', confidence=0.61, last_seen=23:58:17)
+2026-06-23 23:58:17.735 | DEBUG    | core.engine:observe_frame:133 - Frame 4: 1 detection(s).
+2026-06-23 23:58:21.257 | DEBUG    | query.handler:handle:162 - Query intent: CURRENT_VIEW  text='what can you see?'
+2026-06-23 23:58:21.257 | INFO     | core.engine:ask:149 - Query: 'what can you see?' → 'Currently visible: keyboard.'
+2026-06-23 23:58:30.740 | DEBUG    | query.handler:handle:162 - Query intent: FIND_OBJECT  text='where is my keyboarD?'
+2026-06-23 23:58:30.740 | INFO     | core.engine:ask:149 - Query: 'where is my keyboarD?' → 'Your keyboarD is currently on the floor (low confidence — may be misidentified).'
+2026-06-23 23:58:33.666 | DEBUG    | query.handler:handle:162 - Query intent: FIND_OBJECT  text='where is my keyboar?'
+2026-06-23 23:58:33.666 | INFO     | core.engine:ask:149 - Query: 'where is my keyboar?' → 'Your keyboar is currently on the floor (low confidence — may be misidentified).'
+2026-06-23 23:58:41.798 | DEBUG    | memory.store:flush:217 - Memory flushed (6 records).
+2026-06-23 23:58:53.117 | INFO     | memory.store:ingest:114 - New object: ObjectRecord(label='tv', zone='desk', confidence=0.68, last_seen=23:58:53)
+2026-06-23 23:58:53.117 | INFO     | memory.store:ingest:114 - New object: ObjectRecord(label='keyboard', zone='floor', confidence=0.61, last_seen=23:58:53)
+2026-06-23 23:58:53.117 | DEBUG    | core.engine:observe_frame:133 - Frame 5: 2 detection(s).
+2026-06-23 23:59:00.774 | DEBUG    | query.handler:handle:162 - Query intent: LIST_ZONE  text='what is on my desk?'
+2026-06-23 23:59:00.774 | INFO     | core.engine:ask:149 - Query: 'what is on my desk?' → 'On the desk right now: tv.'
+2026-06-23 23:59:11.815 | DEBUG    | memory.store:flush:217 - Memory flushed (8 records).
+2026-06-23 23:59:16.315 | DEBUG    | query.handler:handle:162 - Query intent: FIND_OBJECT  text='where is my keyboard?'
+2026-06-23 23:59:16.315 | INFO     | core.engine:ask:149 - Query: 'where is my keyboard?' → 'Your keyboard is currently on the floor (low confidence — may be misidentified).'
+2026-06-23 23:59:25.150 | DEBUG    | query.handler:handle:162 - Query intent: LIST_ZONE  text='what is on the floor>/'
+2026-06-23 23:59:25.150 | INFO     | core.engine:ask:149 - Query: 'what is on the floor>/' → 'On the floor right now: chair, keyboard, person, and suitcase.'
+2026-06-23 23:59:27.548 | DEBUG    | query.handler:handle:162 - Query intent: LIST_ZONE  text='what is on the floor?'
+2026-06-23 23:59:27.548 | INFO     | core.engine:ask:149 - Query: 'what is on the floor?' → 'On the floor right now: chair, keyboard, person, and suitcase.'
+2026-06-23 23:59:31.992 | DEBUG    | query.handler:handle:162 - Query intent: FIND_OBJECT  text='clear'
+2026-06-23 23:59:31.992 | INFO     | core.engine:ask:149 - Query: 'clear' → 'I have no record of a clear. It may not have been seen by the camera yet.'
+2026-06-23 23:59:36.590 | DEBUG    | query.handler:handle:162 - Query intent: FIND_OBJECT  text='clear memory'
+2026-06-23 23:59:36.590 | INFO     | core.engine:ask:149 - Query: 'clear memory' → 'I have no record of a clear memory. It may not have been seen by the camera yet.'
+2026-06-23 23:59:41.828 | DEBUG    | memory.store:flush:217 - Memory flushed (8 records).
+2026-06-23 23:59:50.838 | DEBUG    | memory.store:flush:217 - Memory flushed (8 records).
+2026-06-23 23:59:50.838 | INFO     | memory.store:stop:74 - MemoryStore stopped and flushed.
+2026-06-24 00:04:24.064 | INFO     | vision.detector:__init__:87 - Loading YOLO model: yolov8n.pt
+2026-06-24 00:04:24.088 | INFO     | vision.detector:__init__:89 - YOLO detector ready.
+2026-06-24 00:04:24.089 | INFO     | memory.store:_load_from_disk:254 - Loaded 8 records from C:\Users\monfo\Downloads\MemoryMap\data\memory.json.
+2026-06-24 00:04:24.089 | INFO     | memory.store:start:66 - MemoryStore started (persist every 30s)
+2026-06-24 00:04:25.092 | DEBUG    | memory.store:flush:217 - Memory flushed (8 records).
+2026-06-24 00:04:33.077 | DEBUG    | query.handler:handle:162 - Query intent: FIND_OBJECT  text='where are my keys'
+2026-06-24 00:04:33.077 | INFO     | core.engine:ask:149 - Query: 'where are my keys' → 'I have no record of a keys. It may not have been seen by the camera yet.'
+2026-06-24 00:04:55.109 | DEBUG    | memory.store:flush:217 - Memory flushed (8 records).
+2026-06-24 00:05:20.719 | DEBUG    | memory.store:ingest:101 - Updated: ObjectRecord(label='tv', zone='desk', confidence=0.81, last_seen=00:05:20)
+2026-06-24 00:05:20.719 | INFO     | memory.store:ingest:114 - New object: ObjectRecord(label='chair', zone='floor', confidence=0.65, last_seen=00:05:20)
+2026-06-24 00:05:20.719 | INFO     | memory.store:ingest:114 - New object: ObjectRecord(label='bottle', zone='general', confidence=0.52, last_seen=00:05:20)
+2026-06-24 00:05:20.719 | DEBUG    | core.engine:observe_frame:133 - Frame 1: 3 detection(s).
+2026-06-24 00:05:25.124 | DEBUG    | memory.store:flush:217 - Memory flushed (10 records).
+2026-06-24 00:05:36.710 | DEBUG    | query.handler:handle:162 - Query intent: FIND_OBJECT  text='where is my bottle'
+2026-06-24 00:05:36.710 | INFO     | core.engine:ask:149 - Query: 'where is my bottle' → 'Your bottle is currently on the general (low confidence — may be misidentified).'
+2026-06-24 00:05:47.382 | DEBUG    | query.handler:handle:162 - Query intent: FIND_OBJECT  text='where is the general'
+2026-06-24 00:05:47.382 | INFO     | core.engine:ask:149 - Query: 'where is the general' → 'I have no record of a general. It may not have been seen by the camera yet.'
+2026-06-24 00:05:55.140 | DEBUG    | memory.store:flush:217 - Memory flushed (10 records).
+2026-06-24 00:05:55.295 | DEBUG    | query.handler:handle:162 - Query intent: FIND_OBJECT  text='where is the TV'
+2026-06-24 00:05:55.295 | INFO     | core.engine:ask:149 - Query: 'where is the TV' → 'Your TV was last seen on the desk 34 seconds ago (moderate confidence).'
+2026-06-24 00:06:06.655 | DEBUG    | query.handler:handle:162 - Query intent: FIND_OBJECT  text='where is my bottle'
+2026-06-24 00:06:06.655 | INFO     | core.engine:ask:149 - Query: 'where is my bottle' → 'Your bottle was last seen on the general 46 seconds ago (low confidence — may be misidentified).'
+2026-06-24 00:06:19.144 | DEBUG    | query.handler:handle:162 - Query intent: FIND_OBJECT  text='where is my chair'
+2026-06-24 00:06:19.144 | INFO     | core.engine:ask:149 - Query: 'where is my chair' → 'Your chair was last seen on the floor 58 seconds ago (low confidence — may be misidentified).'
+2026-06-24 00:06:25.157 | DEBUG    | memory.store:flush:217 - Memory flushed (10 records).
+2026-06-24 00:06:35.175 | DEBUG    | memory.store:flush:217 - Memory flushed (10 records).
+2026-06-24 00:06:35.175 | INFO     | memory.store:stop:74 - MemoryStore stopped and flushed.
+2026-06-24 00:06:49.023 | INFO     | vision.detector:__init__:87 - Loading YOLO model: yolov8n.pt
+2026-06-24 00:06:49.100 | INFO     | vision.detector:__init__:89 - YOLO detector ready.
+2026-06-24 00:06:49.101 | INFO     | memory.store:_load_from_disk:254 - Loaded 10 records from C:\Users\monfo\Downloads\MemoryMap\data\memory.json.
+2026-06-24 00:06:49.101 | INFO     | memory.store:start:66 - MemoryStore started (persist every 30s)
+2026-06-24 00:06:50.103 | DEBUG    | memory.store:flush:217 - Memory flushed (10 records).
+2026-06-24 00:06:54.143 | DEBUG    | memory.store:flush:217 - Memory flushed (0 records).
+2026-06-24 00:06:54.143 | WARNING  | memory.store:clear:226 - Memory store cleared.
+2026-06-24 00:06:59.725 | DEBUG    | query.handler:handle:162 - Query intent: FIND_OBJECT  text='how are you today'
+2026-06-24 00:06:59.725 | INFO     | core.engine:ask:149 - Query: 'how are you today' → 'I have no record of a how are you. It may not have been seen by the camera yet.'
+2026-06-24 00:07:11.433 | DEBUG    | query.handler:handle:162 - Query intent: FIND_OBJECT  text='voice'
+2026-06-24 00:07:11.433 | INFO     | core.engine:ask:149 - Query: 'voice' → 'I have no record of a voice. It may not have been seen by the camera yet.'
+2026-06-24 00:07:20.118 | DEBUG    | memory.store:flush:217 - Memory flushed (0 records).
+2026-06-24 00:07:50.133 | DEBUG    | memory.store:flush:217 - Memory flushed (0 records).
+2026-06-24 00:09:02.382 | INFO     | vision.detector:__init__:87 - Loading YOLO model: yolov8n.pt
+2026-06-24 00:09:02.460 | INFO     | vision.detector:__init__:89 - YOLO detector ready.
+2026-06-24 00:09:02.461 | INFO     | memory.store:_load_from_disk:254 - Loaded 0 records from C:\Users\monfo\Downloads\MemoryMap\data\memory.json.
+2026-06-24 00:09:02.461 | INFO     | memory.store:start:66 - MemoryStore started (persist every 30s)
+2026-06-24 00:09:03.462 | DEBUG    | memory.store:flush:217 - Memory flushed (0 records).
+2026-06-24 00:09:07.437 | DEBUG    | query.handler:handle:162 - Query intent: FIND_OBJECT  text='clear'
+2026-06-24 00:09:07.437 | INFO     | core.engine:ask:149 - Query: 'clear' → 'I have no record of a clear. It may not have been seen by the camera yet.'
+2026-06-24 00:09:18.424 | DEBUG    | query.handler:handle:162 - Query intent: FIND_OBJECT  text='where is my bottle'
+2026-06-24 00:09:18.424 | INFO     | core.engine:ask:149 - Query: 'where is my bottle' → 'I have no record of a bottle. It may not have been seen by the camera yet.'
+2026-06-24 00:09:33.477 | DEBUG    | memory.store:flush:217 - Memory flushed (0 records).
+2026-06-24 00:09:44.184 | INFO     | vision.detector:__init__:87 - Loading YOLO model: yolov8n.pt
+2026-06-24 00:09:44.263 | INFO     | vision.detector:__init__:89 - YOLO detector ready.
+2026-06-24 00:09:44.263 | INFO     | memory.store:_load_from_disk:254 - Loaded 0 records from C:\Users\monfo\Downloads\MemoryMap\data\memory.json.
+2026-06-24 00:09:44.264 | INFO     | memory.store:start:66 - MemoryStore started (persist every 30s)
+2026-06-24 00:09:45.266 | DEBUG    | memory.store:flush:217 - Memory flushed (0 records).
+2026-06-24 00:09:46.197 | DEBUG    | memory.store:flush:217 - Memory flushed (0 records).
+2026-06-24 00:09:46.197 | WARNING  | memory.store:clear:226 - Memory store cleared.
+2026-06-24 00:09:55.732 | DEBUG    | query.handler:handle:162 - Query intent: FIND_OBJECT  text='hello'
+2026-06-24 00:09:55.732 | INFO     | core.engine:ask:149 - Query: 'hello' → 'I have no record of a hello. It may not have been seen by the camera yet.'
+2026-06-24 00:10:15.281 | DEBUG    | memory.store:flush:217 - Memory flushed (0 records).
+2026-06-24 00:11:26.873 | INFO     | vision.detector:__init__:87 - Loading YOLO model: yolov8n.pt
+2026-06-24 00:11:26.951 | INFO     | vision.detector:__init__:89 - YOLO detector ready.
+2026-06-24 00:11:26.951 | INFO     | memory.store:_load_from_disk:254 - Loaded 0 records from C:\Users\monfo\Downloads\MemoryMap\data\memory.json.
+2026-06-24 00:11:26.952 | INFO     | memory.store:start:66 - MemoryStore started (persist every 30s)
+2026-06-24 00:11:27.953 | DEBUG    | memory.store:flush:217 - Memory flushed (0 records).
+2026-06-24 00:11:45.013 | DEBUG    | query.handler:handle:162 - Query intent: FIND_OBJECT  text='where is my bottle'
+2026-06-24 00:11:45.014 | INFO     | core.engine:ask:149 - Query: 'where is my bottle' → 'I have no record of a bottle. It may not have been seen by the camera yet.'
+2026-06-24 00:11:54.380 | DEBUG    | query.handler:handle:162 - Query intent: FIND_OBJECT  text='clear the memory'
+2026-06-24 00:11:54.380 | INFO     | core.engine:ask:149 - Query: 'clear the memory' → 'I have no record of a clear memory. It may not have been seen by the camera yet.'
+2026-06-24 00:11:57.970 | DEBUG    | memory.store:flush:217 - Memory flushed (0 records).
+2026-06-24 00:12:00.687 | DEBUG    | query.handler:handle:162 - Query intent: FIND_OBJECT  text='clear memory'
+2026-06-24 00:12:00.687 | INFO     | core.engine:ask:149 - Query: 'clear memory' → 'I have no record of a clear memory. It may not have been seen by the camera yet.'
+2026-06-24 00:12:04.576 | DEBUG    | query.handler:handle:162 - Query intent: FIND_OBJECT  text='clear'
+2026-06-24 00:12:04.576 | INFO     | core.engine:ask:149 - Query: 'clear' → 'I have no record of a clear. It may not have been seen by the camera yet.'
+2026-06-24 00:12:07.935 | DEBUG    | memory.store:flush:217 - Memory flushed (0 records).
+2026-06-24 00:12:07.935 | WARNING  | memory.store:clear:226 - Memory store cleared.
+2026-06-24 00:12:27.982 | DEBUG    | memory.store:flush:217 - Memory flushed (0 records).
+2026-06-24 00:12:31.530 | INFO     | memory.store:ingest:114 - New object: ObjectRecord(label='couch', zone='general', confidence=0.56, last_seen=00:12:31)
+2026-06-24 00:12:31.530 | DEBUG    | core.engine:observe_frame:133 - Frame 1: 1 detection(s).
+2026-06-24 00:12:36.711 | INFO     | memory.store:ingest:114 - New object: ObjectRecord(label='book', zone='shelf', confidence=0.64, last_seen=00:12:36)
+2026-06-24 00:12:36.711 | INFO     | memory.store:ingest:114 - New object: ObjectRecord(label='clock', zone='desk', confidence=0.52, last_seen=00:12:36)
+2026-06-24 00:12:36.711 | DEBUG    | core.engine:observe_frame:133 - Frame 2: 2 detection(s).
+2026-06-24 00:12:42.845 | DEBUG    | core.engine:observe_frame:133 - Frame 3: 0 detection(s).
+2026-06-24 00:12:48.957 | INFO     | memory.store:ingest:114 - New object: ObjectRecord(label='bottle', zone='general', confidence=0.83, last_seen=00:12:48)
+2026-06-24 00:12:48.957 | DEBUG    | core.engine:observe_frame:133 - Frame 4: 1 detection(s).
+2026-06-24 00:12:54.826 | INFO     | memory.store:ingest:114 - New object: ObjectRecord(label='tv', zone='desk', confidence=0.82, last_seen=00:12:54)
+2026-06-24 00:12:54.826 | INFO     | memory.store:ingest:114 - New object: ObjectRecord(label='bottle', zone='general', confidence=0.80, last_seen=00:12:54)
+2026-06-24 00:12:54.826 | INFO     | memory.store:ingest:114 - New object: ObjectRecord(label='keyboard', zone='general', confidence=0.56, last_seen=00:12:54)
+2026-06-24 00:12:54.826 | INFO     | memory.store:ingest:114 - New object: ObjectRecord(label='tv', zone='shelf', confidence=0.51, last_seen=00:12:54)
+2026-06-24 00:12:54.826 | DEBUG    | core.engine:observe_frame:133 - Frame 5: 4 detection(s).
+2026-06-24 00:12:58.005 | DEBUG    | memory.store:flush:217 - Memory flushed (8 records).
+2026-06-24 00:13:04.198 | DEBUG    | core.engine:observe_frame:133 - Frame 6: 0 detection(s).
+2026-06-24 00:13:13.818 | INFO     | memory.store:ingest:114 - New object: ObjectRecord(label='suitcase', zone='desk', confidence=0.60, last_seen=00:13:13)
+2026-06-24 00:13:13.818 | DEBUG    | core.engine:observe_frame:133 - Frame 7: 1 detection(s).
+2026-06-24 00:13:28.018 | DEBUG    | memory.store:flush:217 - Memory flushed (9 records).
+2026-06-24 00:13:28.859 | INFO     | memory.store:ingest:114 - New object: ObjectRecord(label='scissors', zone='desk', confidence=0.70, last_seen=00:13:28)
+2026-06-24 00:13:28.859 | INFO     | memory.store:ingest:114 - New object: ObjectRecord(label='suitcase', zone='general', confidence=0.59, last_seen=00:13:28)
+2026-06-24 00:13:28.859 | DEBUG    | core.engine:observe_frame:133 - Frame 8: 2 detection(s).
+2026-06-24 00:13:41.505 | DEBUG    | query.handler:handle:162 - Query intent: FIND_OBJECT  text='where is my TV'
+2026-06-24 00:13:41.505 | INFO     | core.engine:ask:149 - Query: 'where is my TV' → 'Your TV was last seen on the desk 46 seconds ago (moderate confidence).'
+2026-06-24 00:13:51.892 | DEBUG    | query.handler:handle:162 - Query intent: FIND_OBJECT  text='where is my desk'
+2026-06-24 00:13:51.894 | INFO     | core.engine:ask:149 - Query: 'where is my desk' → 'I have no record of a desk. It may not have been seen by the camera yet.'
+2026-06-24 00:13:58.033 | DEBUG    | memory.store:flush:217 - Memory flushed (11 records).
+2026-06-24 00:13:58.168 | DEBUG    | query.handler:handle:162 - Query intent: FIND_OBJECT  text='where is my suitcase'
+2026-06-24 00:13:58.168 | INFO     | core.engine:ask:149 - Query: 'where is my suitcase' → 'Your suitcase is currently on the general (low confidence — may be misidentified).'
+2026-06-24 00:14:07.090 | DEBUG    | query.handler:handle:162 - Query intent: FIND_OBJECT  text='where are my balls'
+2026-06-24 00:14:07.090 | INFO     | core.engine:ask:149 - Query: 'where are my balls' → 'I have no record of a balls. It may not have been seen by the camera yet.'
+2026-06-24 00:14:13.066 | DEBUG    | query.handler:handle:162 - Query intent: FIND_OBJECT  text='where are my bottles'
+2026-06-24 00:14:13.066 | INFO     | core.engine:ask:149 - Query: 'where are my bottles' → 'I have no record of a bottles. It may not have been seen by the camera yet.'
+2026-06-24 00:14:19.010 | DEBUG    | query.handler:handle:162 - Query intent: FIND_OBJECT  text='where is my bottle'
+2026-06-24 00:14:19.010 | INFO     | core.engine:ask:149 - Query: 'where is my bottle' → 'Your bottle was last seen on the general 1 minute ago (moderate confidence).'
+2026-06-24 00:14:28.048 | DEBUG    | memory.store:flush:217 - Memory flushed (11 records).
+2026-06-24 00:14:39.773 | INFO     | vision.detector:__init__:87 - Loading YOLO model: yolov8n.pt
+2026-06-24 00:14:39.849 | INFO     | vision.detector:__init__:89 - YOLO detector ready.
+2026-06-24 00:14:39.850 | INFO     | memory.store:_load_from_disk:254 - Loaded 11 records from C:\Users\monfo\Downloads\MemoryMap\data\memory.json.
+2026-06-24 00:14:39.850 | INFO     | memory.store:start:66 - MemoryStore started (persist every 30s)
+2026-06-24 00:14:40.852 | DEBUG    | memory.store:flush:217 - Memory flushed (11 records).
+2026-06-24 00:15:10.867 | DEBUG    | memory.store:flush:217 - Memory flushed (11 records).
+2026-06-24 00:15:42.394 | INFO     | vision.detector:__init__:87 - Loading YOLO model: yolov8n.pt
+2026-06-24 00:15:42.508 | INFO     | vision.detector:__init__:89 - YOLO detector ready.
+2026-06-24 00:15:42.509 | INFO     | memory.store:_load_from_disk:254 - Loaded 11 records from C:\Users\monfo\Downloads\MemoryMap\data\memory.json.
+2026-06-24 00:15:42.509 | INFO     | memory.store:start:66 - MemoryStore started (persist every 30s)
+2026-06-24 00:15:43.513 | DEBUG    | memory.store:flush:217 - Memory flushed (11 records).
+2026-06-24 00:15:58.680 | DEBUG    | query.handler:handle:162 - Query intent: FIND_OBJECT  text='where is my TV'
+2026-06-24 00:15:58.680 | INFO     | core.engine:ask:149 - Query: 'where is my TV' → 'Your TV was last seen on the desk 3 minutes ago (moderate confidence).'
+2026-06-24 00:16:13.528 | DEBUG    | memory.store:flush:217 - Memory flushed (11 records).
+2026-06-24 00:16:16.199 | DEBUG    | query.handler:handle:162 - Query intent: FIND_OBJECT  text='where is my keyboard'
+2026-06-24 00:16:16.199 | INFO     | core.engine:ask:149 - Query: 'where is my keyboard' → 'Your keyboard was last seen on the general 3 minutes ago (low confidence — may be misidentified).'
+2026-06-24 00:16:24.797 | DEBUG    | query.handler:handle:162 - Query intent: LIST_ZONE  text='what is on my desk'
+2026-06-24 00:16:24.797 | INFO     | core.engine:ask:149 - Query: 'what is on my desk' → 'On the desk right now: clock, scissors, suitcase, and tv.'
+2026-06-24 00:16:27.537 | DEBUG    | memory.store:flush:217 - Memory flushed (11 records).
+2026-06-24 00:16:27.537 | INFO     | memory.store:stop:74 - MemoryStore stopped and flushed.
+2026-06-24 00:17:06.913 | INFO     | vision.detector:__init__:87 - Loading YOLO model: yolov8n.pt
+2026-06-24 00:17:07.005 | INFO     | vision.detector:__init__:89 - YOLO detector ready.
+2026-06-24 00:17:07.006 | INFO     | memory.store:_load_from_disk:254 - Loaded 11 records from C:\Users\monfo\Downloads\MemoryMap\data\memory.json.
+2026-06-24 00:17:07.006 | INFO     | memory.store:start:66 - MemoryStore started (persist every 30s)
+2026-06-24 00:17:08.009 | DEBUG    | memory.store:flush:217 - Memory flushed (11 records).
+2026-06-24 00:17:21.551 | DEBUG    | memory.store:flush:217 - Memory flushed (0 records).
+2026-06-24 00:17:21.552 | WARNING  | memory.store:clear:226 - Memory store cleared.
+2026-06-24 00:17:50.107 | INFO     | vision.detector:__init__:87 - Loading YOLO model: yolov8n.pt
+2026-06-24 00:17:50.199 | INFO     | vision.detector:__init__:89 - YOLO detector ready.
+2026-06-24 00:17:50.200 | INFO     | memory.store:_load_from_disk:254 - Loaded 0 records from C:\Users\monfo\Downloads\MemoryMap\data\memory.json.
+2026-06-24 00:17:50.200 | INFO     | memory.store:start:66 - MemoryStore started (persist every 30s)
+2026-06-24 00:17:51.202 | DEBUG    | memory.store:flush:217 - Memory flushed (0 records).
+2026-06-24 00:18:21.218 | DEBUG    | memory.store:flush:217 - Memory flushed (0 records).
+2026-06-24 00:18:51.234 | DEBUG    | memory.store:flush:217 - Memory flushed (0 records).
+2026-06-24 00:19:21.248 | DEBUG    | memory.store:flush:217 - Memory flushed (0 records).
+2026-06-24 00:19:48.083 | INFO     | memory.store:ingest:114 - New object: ObjectRecord(label='tv', zone='desk', confidence=0.85, last_seen=00:19:47)
+2026-06-24 00:19:48.083 | INFO     | memory.store:ingest:114 - New object: ObjectRecord(label='bottle', zone='general', confidence=0.65, last_seen=00:19:47)
+2026-06-24 00:19:48.083 | INFO     | memory.store:ingest:114 - New object: ObjectRecord(label='remote', zone='floor', confidence=0.51, last_seen=00:19:47)
+2026-06-24 00:19:48.083 | INFO     | memory.store:ingest:114 - New object: ObjectRecord(label='tv', zone='shelf', confidence=0.50, last_seen=00:19:47)
+2026-06-24 00:19:48.083 | DEBUG    | core.engine:observe_frame:133 - Frame 1: 4 detection(s).
+2026-06-24 00:19:51.263 | DEBUG    | memory.store:flush:217 - Memory flushed (4 records).
+2026-06-24 00:20:16.917 | DEBUG    | query.handler:handle:162 - Query intent: FIND_OBJECT  text='where is my TV'
+2026-06-24 00:20:16.917 | INFO     | core.engine:ask:149 - Query: 'where is my TV' → 'Your TV is currently on the desk (moderate confidence).'
+2026-06-24 00:20:21.279 | DEBUG    | memory.store:flush:217 - Memory flushed (4 records).
+2026-06-24 00:20:28.286 | DEBUG    | query.handler:handle:162 - Query intent: LIST_ZONE  text='What is on my desk?'
+2026-06-24 00:20:28.287 | INFO     | core.engine:ask:149 - Query: 'What is on my desk?' → 'On the desk right now: tv.'
+2026-06-24 00:20:34.493 | DEBUG    | query.handler:handle:162 - Query intent: FIND_OBJECT  text='Where is my bottle'
+2026-06-24 00:20:34.493 | INFO     | core.engine:ask:149 - Query: 'Where is my bottle' → 'Your bottle was last seen on the general 46 seconds ago (low confidence — may be misidentified).'
+2026-06-24 00:20:44.295 | DEBUG    | memory.store:flush:217 - Memory flushed (4 records).
+2026-06-24 00:20:44.296 | INFO     | memory.store:stop:74 - MemoryStore stopped and flushed.
+2026-06-24 00:22:25.585 | INFO     | vision.detector:__init__:87 - Loading YOLO model: yolov8n.pt
+2026-06-24 00:22:25.611 | INFO     | vision.detector:__init__:89 - YOLO detector ready.
+2026-06-24 00:22:25.611 | INFO     | memory.store:_load_from_disk:254 - Loaded 4 records from C:\Users\monfo\Downloads\MemoryMap\data\memory.json.
+2026-06-24 00:22:25.612 | INFO     | memory.store:start:66 - MemoryStore started (persist every 30s)
+2026-06-24 00:22:26.614 | DEBUG    | memory.store:flush:217 - Memory flushed (4 records).
+2026-06-24 00:23:12.166 | INFO     | vision.detector:__init__:87 - Loading YOLO model: yolov8n.pt
+2026-06-24 00:23:12.251 | INFO     | vision.detector:__init__:89 - YOLO detector ready.
+2026-06-24 00:23:12.251 | INFO     | memory.store:_load_from_disk:254 - Loaded 4 records from C:\Users\monfo\Downloads\MemoryMap\data\memory.json.
+2026-06-24 00:23:12.252 | INFO     | memory.store:start:66 - MemoryStore started (persist every 30s)
+2026-06-24 00:23:13.253 | DEBUG    | memory.store:flush:217 - Memory flushed (4 records).
+2026-06-24 00:23:36.026 | INFO     | vision.detector:__init__:87 - Loading YOLO model: yolov8n.pt
+2026-06-24 00:23:36.120 | INFO     | vision.detector:__init__:89 - YOLO detector ready.
+2026-06-24 00:23:36.121 | INFO     | memory.store:_load_from_disk:254 - Loaded 4 records from C:\Users\monfo\Downloads\MemoryMap\data\memory.json.
+2026-06-24 00:23:36.121 | INFO     | memory.store:start:66 - MemoryStore started (persist every 30s)
+2026-06-24 00:23:37.123 | DEBUG    | memory.store:flush:217 - Memory flushed (4 records).
+2026-06-24 00:24:07.138 | DEBUG    | memory.store:flush:217 - Memory flushed (4 records).
+2026-06-24 00:24:35.260 | INFO     | vision.detector:__init__:87 - Loading YOLO model: yolov8n.pt
+2026-06-24 00:24:35.343 | INFO     | vision.detector:__init__:89 - YOLO detector ready.
+2026-06-24 00:24:35.344 | INFO     | memory.store:_load_from_disk:254 - Loaded 4 records from C:\Users\monfo\Downloads\MemoryMap\data\memory.json.
+2026-06-24 00:24:35.344 | INFO     | memory.store:start:66 - MemoryStore started (persist every 30s)
+2026-06-24 00:24:36.346 | DEBUG    | memory.store:flush:217 - Memory flushed (4 records).
+2026-06-24 00:25:06.363 | DEBUG    | memory.store:flush:217 - Memory flushed (4 records).
+2026-06-24 00:25:36.378 | DEBUG    | memory.store:flush:217 - Memory flushed (4 records).
+2026-06-24 00:26:06.394 | DEBUG    | memory.store:flush:217 - Memory flushed (4 records).
+2026-06-24 00:26:31.349 | INFO     | vision.detector:__init__:87 - Loading YOLO model: yolov8n.pt
+2026-06-24 00:26:31.435 | INFO     | vision.detector:__init__:89 - YOLO detector ready.
+2026-06-24 00:26:31.435 | INFO     | memory.store:_load_from_disk:254 - Loaded 4 records from C:\Users\monfo\Downloads\MemoryMap\data\memory.json.
+2026-06-24 00:26:31.437 | INFO     | memory.store:start:66 - MemoryStore started (persist every 30s)
+2026-06-24 00:26:32.439 | DEBUG    | memory.store:flush:217 - Memory flushed (4 records).
+2026-06-24 00:27:13.563 | INFO     | vision.detector:__init__:87 - Loading YOLO model: yolov8n.pt
+2026-06-24 00:27:13.651 | INFO     | vision.detector:__init__:89 - YOLO detector ready.
+2026-06-24 00:27:13.651 | INFO     | memory.store:_load_from_disk:254 - Loaded 4 records from C:\Users\monfo\Downloads\MemoryMap\data\memory.json.
+2026-06-24 00:27:13.652 | INFO     | memory.store:start:66 - MemoryStore started (persist every 30s)
+2026-06-24 00:27:14.655 | DEBUG    | memory.store:flush:217 - Memory flushed (4 records).
+2026-06-24 00:27:26.855 | DEBUG    | memory.store:flush:217 - Memory flushed (0 records).
+2026-06-24 00:27:26.855 | WARNING  | memory.store:clear:226 - Memory store cleared.
+2026-06-24 00:28:25.766 | INFO     | vision.detector:__init__:87 - Loading YOLO model: yolov8n.pt
+2026-06-24 00:28:25.857 | INFO     | vision.detector:__init__:89 - YOLO detector ready.
+2026-06-24 00:28:25.857 | INFO     | memory.store:_load_from_disk:254 - Loaded 0 records from C:\Users\monfo\Downloads\MemoryMap\data\memory.json.
+2026-06-24 00:28:25.858 | INFO     | memory.store:start:66 - MemoryStore started (persist every 30s)
+2026-06-24 00:28:26.858 | DEBUG    | memory.store:flush:217 - Memory flushed (0 records).
+2026-06-24 00:28:55.350 | INFO     | memory.store:ingest:114 - New object: ObjectRecord(label='tv', zone='desk', confidence=0.85, last_seen=00:28:54)
+2026-06-24 00:28:55.350 | INFO     | memory.store:ingest:114 - New object: ObjectRecord(label='keyboard', zone='shelf', confidence=0.76, last_seen=00:28:54)
+2026-06-24 00:28:55.352 | INFO     | memory.store:ingest:114 - New object: ObjectRecord(label='chair', zone='floor', confidence=0.51, last_seen=00:28:54)
+2026-06-24 00:28:55.352 | DEBUG    | core.engine:observe_frame:133 - Frame 1: 3 detection(s).
+2026-06-24 00:28:56.876 | DEBUG    | memory.store:flush:217 - Memory flushed (3 records).
+2026-06-24 00:29:08.170 | INFO     | memory.store:ingest:114 - New object: ObjectRecord(label='keyboard', zone='general', confidence=0.76, last_seen=00:29:08)
+2026-06-24 00:29:08.170 | DEBUG    | memory.store:ingest:101 - Updated: ObjectRecord(label='tv', zone='shelf', confidence=0.74, last_seen=00:29:08)
+2026-06-24 00:29:08.170 | INFO     | memory.store:ingest:114 - New object: ObjectRecord(label='mouse', zone='general', confidence=0.64, last_seen=00:29:08)
+2026-06-24 00:29:08.170 | INFO     | memory.store:ingest:114 - New object: ObjectRecord(label='bottle', zone='desk', confidence=0.56, last_seen=00:29:08)
+2026-06-24 00:29:08.170 | DEBUG    | core.engine:observe_frame:133 - Frame 2: 4 detection(s).
+2026-06-24 00:29:26.891 | DEBUG    | memory.store:flush:217 - Memory flushed (6 records).
+2026-06-24 00:29:29.393 | DEBUG    | query.handler:handle:162 - Query intent: FIND_OBJECT  text='where is my TV'
+2026-06-24 00:29:29.394 | INFO     | core.engine:ask:149 - Query: 'where is my TV' → 'Your TV is currently on the shelf (moderate confidence).'
+2026-06-24 00:29:52.016 | DEBUG    | query.handler:handle:162 - Query intent: FIND_OBJECT  text='where is my mouse'
+2026-06-24 00:29:52.016 | INFO     | core.engine:ask:149 - Query: 'where is my mouse' → 'Your mouse was last seen on the general 43 seconds ago (low confidence — may be misidentified).'
+2026-06-24 00:29:56.907 | DEBUG    | memory.store:flush:217 - Memory flushed (6 records).
+2026-06-24 00:29:58.861 | DEBUG    | query.handler:handle:162 - Query intent: FIND_OBJECT  text='where is my keyboard'
+2026-06-24 00:29:58.862 | INFO     | core.engine:ask:149 - Query: 'where is my keyboard' → 'Your keyboard was last seen on the general 50 seconds ago (moderate confidence).'
+2026-06-24 00:30:07.921 | DEBUG    | query.handler:handle:162 - Query intent: FIND_OBJECT  text='where is my bottle'
+2026-06-24 00:30:07.921 | INFO     | core.engine:ask:149 - Query: 'where is my bottle' → 'Your bottle was last seen on the desk 59 seconds ago (low confidence — may be misidentified).'
+2026-06-24 00:30:26.923 | DEBUG    | memory.store:flush:217 - Memory flushed (6 records).
+2026-06-24 00:34:38.368 | INFO     | vision.detector:__init__:87 - Loading YOLO model: yolov8n.pt
+2026-06-24 00:34:38.457 | INFO     | vision.detector:__init__:89 - YOLO detector ready.
+2026-06-24 00:34:38.458 | INFO     | memory.store:_load_from_disk:254 - Loaded 6 records from C:\Users\monfo\Downloads\MemoryMap\data\memory.json.
+2026-06-24 00:34:38.459 | INFO     | memory.store:start:66 - MemoryStore started (persist every 30s)
+2026-06-24 00:34:39.460 | DEBUG    | memory.store:flush:217 - Memory flushed (6 records).
+2026-06-24 00:34:51.491 | DEBUG    | query.handler:handle:162 - Query intent: FIND_OBJECT  text='where is my bottle'
+2026-06-24 00:34:51.491 | INFO     | core.engine:ask:149 - Query: 'where is my bottle' → 'Your bottle was last seen on the desk 5 minutes ago (low confidence — may be misidentified).'
+2026-06-24 00:35:03.548 | DEBUG    | query.handler:handle:162 - Query intent: FIND_OBJECT  text='where is my TV'
+2026-06-24 00:35:03.548 | INFO     | core.engine:ask:149 - Query: 'where is my TV' → 'Your TV was last seen on the desk 5 minutes ago (moderate confidence).'
+2026-06-24 00:35:09.477 | DEBUG    | memory.store:flush:217 - Memory flushed (6 records).
+2026-06-24 00:35:11.395 | DEBUG    | query.handler:handle:162 - Query intent: FIND_OBJECT  text='where is my chair'
+2026-06-24 00:35:11.395 | INFO     | core.engine:ask:149 - Query: 'where is my chair' → 'Your chair was last seen on the floor 6 minutes ago (low confidence — may be misidentified).'
+2026-06-24 00:35:21.352 | DEBUG    | query.handler:handle:162 - Query intent: LIST_ZONE  text='what is on my desk?'
+2026-06-24 00:35:21.352 | INFO     | core.engine:ask:149 - Query: 'what is on my desk?' → 'On the desk right now: bottle, keyboard, mouse, and tv.'
+2026-06-24 00:35:30.748 | DEBUG    | query.handler:handle:162 - Query intent: LIST_ZONE  text='what is on the shelf?'
+2026-06-24 00:35:30.748 | INFO     | core.engine:ask:149 - Query: 'what is on the shelf?' → "I don't see anything in the shelf right now."
+2026-06-24 00:35:39.490 | DEBUG    | memory.store:flush:217 - Memory flushed (6 records).
+2026-06-24 00:36:09.505 | DEBUG    | memory.store:flush:217 - Memory flushed (6 records).
+2026-06-24 00:36:39.518 | DEBUG    | memory.store:flush:217 - Memory flushed (6 records).
+2026-06-24 00:37:09.533 | DEBUG    | memory.store:flush:217 - Memory flushed (6 records).
+2026-06-24 00:37:39.546 | DEBUG    | memory.store:flush:217 - Memory flushed (6 records).
+2026-06-24 00:38:09.559 | DEBUG    | memory.store:flush:217 - Memory flushed (6 records).
+2026-06-24 00:38:39.573 | DEBUG    | memory.store:flush:217 - Memory flushed (6 records).
+2026-06-24 00:39:09.587 | DEBUG    | memory.store:flush:217 - Memory flushed (6 records).
+2026-06-24 00:39:39.602 | DEBUG    | memory.store:flush:217 - Memory flushed (6 records).
+2026-06-24 00:40:09.616 | DEBUG    | memory.store:flush:217 - Memory flushed (6 records).
+2026-06-24 00:40:39.631 | DEBUG    | memory.store:flush:217 - Memory flushed (6 records).
+2026-06-24 00:41:09.647 | DEBUG    | memory.store:flush:217 - Memory flushed (6 records).
+2026-06-24 00:41:39.662 | DEBUG    | memory.store:flush:217 - Memory flushed (6 records).
+2026-06-24 00:42:09.678 | DEBUG    | memory.store:flush:217 - Memory flushed (6 records).
+2026-06-24 00:42:39.692 | DEBUG    | memory.store:flush:217 - Memory flushed (6 records).
+2026-06-24 00:43:09.706 | DEBUG    | memory.store:flush:217 - Memory flushed (6 records).
+2026-06-24 00:43:39.721 | DEBUG    | memory.store:flush:217 - Memory flushed (6 records).
+2026-06-24 00:44:09.736 | DEBUG    | memory.store:flush:217 - Memory flushed (6 records).
+2026-06-24 00:44:39.752 | DEBUG    | memory.store:flush:217 - Memory flushed (6 records).
+2026-06-24 00:45:09.767 | DEBUG    | memory.store:flush:217 - Memory flushed (6 records).
+2026-06-24 00:45:39.779 | DEBUG    | memory.store:flush:217 - Memory flushed (6 records).
+2026-06-24 00:46:09.793 | DEBUG    | memory.store:flush:217 - Memory flushed (6 records).
+2026-06-24 00:46:39.808 | DEBUG    | memory.store:flush:217 - Memory flushed (6 records).
+2026-06-24 00:47:09.821 | DEBUG    | memory.store:flush:217 - Memory flushed (6 records).
+2026-06-24 00:47:39.834 | DEBUG    | memory.store:flush:217 - Memory flushed (6 records).
+2026-06-24 00:48:09.848 | DEBUG    | memory.store:flush:217 - Memory flushed (6 records).
+2026-06-24 00:48:39.864 | DEBUG    | memory.store:flush:217 - Memory flushed (6 records).
+2026-06-24 00:49:09.876 | DEBUG    | memory.store:flush:217 - Memory flushed (6 records).
+2026-06-24 00:49:39.890 | DEBUG    | memory.store:flush:217 - Memory flushed (6 records).
+2026-06-24 00:50:09.904 | DEBUG    | memory.store:flush:217 - Memory flushed (6 records).
+2026-06-24 00:50:39.915 | DEBUG    | memory.store:flush:217 - Memory flushed (6 records).
+2026-06-24 00:51:09.930 | DEBUG    | memory.store:flush:217 - Memory flushed (6 records).
+2026-06-24 00:51:39.945 | DEBUG    | memory.store:flush:217 - Memory flushed (6 records).
+2026-06-24 00:52:09.960 | DEBUG    | memory.store:flush:217 - Memory flushed (6 records).
+2026-06-24 00:52:39.975 | DEBUG    | memory.store:flush:217 - Memory flushed (6 records).
+2026-06-24 00:53:09.990 | DEBUG    | memory.store:flush:217 - Memory flushed (6 records).
+2026-06-24 00:53:40.004 | DEBUG    | memory.store:flush:217 - Memory flushed (6 records).
+2026-06-24 00:54:10.020 | DEBUG    | memory.store:flush:217 - Memory flushed (6 records).
+2026-06-24 00:54:40.033 | DEBUG    | memory.store:flush:217 - Memory flushed (6 records).
+2026-06-24 00:55:10.048 | DEBUG    | memory.store:flush:217 - Memory flushed (6 records).
+2026-06-24 00:55:40.062 | DEBUG    | memory.store:flush:217 - Memory flushed (6 records).
+2026-06-24 00:56:10.077 | DEBUG    | memory.store:flush:217 - Memory flushed (6 records).
+2026-06-24 00:56:40.090 | DEBUG    | memory.store:flush:217 - Memory flushed (6 records).
+2026-06-24 00:57:10.107 | DEBUG    | memory.store:flush:217 - Memory flushed (6 records).
+2026-06-24 00:57:40.120 | DEBUG    | memory.store:flush:217 - Memory flushed (6 records).
+2026-06-24 00:58:10.133 | DEBUG    | memory.store:flush:217 - Memory flushed (6 records).
+2026-06-24 00:58:40.146 | DEBUG    | memory.store:flush:217 - Memory flushed (6 records).
+2026-06-24 00:59:10.160 | DEBUG    | memory.store:flush:217 - Memory flushed (6 records).
+2026-06-24 00:59:40.172 | DEBUG    | memory.store:flush:217 - Memory flushed (6 records).
+2026-06-24 01:00:10.188 | DEBUG    | memory.store:flush:217 - Memory flushed (6 records).
+2026-06-24 01:00:40.201 | DEBUG    | memory.store:flush:217 - Memory flushed (6 records).

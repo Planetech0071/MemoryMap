@@ -16,7 +16,7 @@ class Location:
     """Normalised (0-1) position within the camera frame, plus optional zone label."""
     x: float          # horizontal centre, 0 = left, 1 = right
     y: float          # vertical centre,   0 = top,  1 = bottom
-    zone: str = "general"
+    zone: str = "desk"
 
     def distance_to(self, other: "Location") -> float:
         """Euclidean distance in normalised space."""
@@ -27,7 +27,7 @@ class Location:
 
     @classmethod
     def from_dict(cls, d: dict) -> "Location":
-        return cls(x=d["x"], y=d["y"], zone=d.get("zone", "general"))
+        return cls(x=d["x"], y=d["y"], zone=d.get("zone", "desk"))
 
 
 @dataclass

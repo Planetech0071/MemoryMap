@@ -67,7 +67,13 @@ class MemoryMapEngine:
     # ── Lifecycle ──────────────────────────────────────────────────────────
 
     def start(self, phone_stream: bool = False) -> None:
-        """Start the memory store and the background camera observation loop."""
+        """
+        Start the memory store and, if a camera source is configured,
+        the background observation loop.
+
+        In phone mode (source=None) only the store is started; frames
+        arrive via observe_frame() called from the API.
+        """
         if self._is_running:
             logger.warning("Engine already running.")
             return
@@ -76,6 +82,13 @@ class MemoryMapEngine:
         self._stop_event.clear()
         self._started_at = datetime.now()
         self._is_running = True
+
+        if self.source is None:
+            logger.info(
+                "MemoryMap engine started in API-only mode (no camera loop). "
+                "Frames must be submitted via /observe."
+            )
+            return  # No camera loop — frames arrive via observe_frame()
 
         self._loop_thread = threading.Thread(
             target=self._observation_loop,
